@@ -1,0 +1,241 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.mainContainer
+{ padding-top: 70px;
+     display: flex;
+     background-color: #01AB87;
+     flex-direction: column;
+     align-items: center;
+     justify-content: end;
+     border-bottom: 3px solid white;
+}
+.mainText
+{ font-family: Caveat;
+    font-size: 70px;
+}
+.secondaryText
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.resultContainer
+{   
+    display: flex;
+    background-color: #6665ee;
+    flex-direction: column;
+align-items: center;
+justify-content: start;
+height: 200px;   
+  gap:15px;
+  border-bottom: 4px solid white;
+
+}
+.resultMainText
+{ font-size: 40px;
+    
+}
+.resultsecondaryText
+{
+    font-size: 30px;
+}
+.answersContainer
+{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 4px solid white;
+
+
+}
+.cardText
+{
+    margin-top:70px
+}
+.cardTtitle
+{
+    font-size: 29px;
+    margin-top:100px ;
+}
+.progress-container
+{   display: grid;
+    height: 100%;
+    place-items: center;
+    border-bottom: 4px solid white;
+
+    
+}
+::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+  .skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 100%;
+  }
+  .bar .progress-line.css span{
+    width: 100%;
+  }
+  .bar .progress-line.jquery span{
+    width: 80%;
+  }
+  
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "5/5";
+  }
+  .progress-line.css span::after{
+    content: "5/5";
+  }
+  .progress-line.jquery span::after{
+    content: "8/10";
+  }
+  .end-container
+  {
+    display: flex;
+    background-color:#6665ee;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 4px solid white;
+    gap: 20px;
+    padding: 30px;
+
+  }
+  .endMain{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .links-container
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    gap: 100px;
+  }
+  .endSecondary
+  {
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+a{text-decoration: none; color: black;}
+.links{border: 2px solid black; padding: 10px; padding-right: 20px;}
+@media screen and (min-device-width: 0px) and (max-device-width : 480px){
+    .mainImage
+    {
+        height: 150px;
+        width: 310px;
+        
+    }
+    .mainText
+    {
+        font-size: 50px ;
+    }
+    .secondaryText
+    {
+        font-size: 18px ;
+
+    }
+    .answersContainer
+    { flex-direction: column;
+        gap: 20px;
+
+    }
+    .card{
+        height: 330px !important;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width : 768px){
+
+    .card{
+        height: 352px !important;
+    }
+}
