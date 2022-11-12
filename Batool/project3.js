@@ -25,3 +25,13 @@ previous.onclick=function(){
     img.setAttribute("src",images[slidernumber]);
     slidernumber--;
 }
+
+img.onmouseover=function()
+{
+    img.src=images[0];
+}
+
+img.onmouseleave=function()
+{
+    img.src=images[1];
+}
