@@ -23,7 +23,42 @@ body{
     flex-direction: row;
     justify-content: center;
     /* border: #729557 solid; */
+    
 }
+
+#listButton{
+    position: fixed;
+    left: 93%;
+    top: 15%;
+    height: 30px;
+    width: 40px;
+}
+
+#listButton:hover{
+    height: 39rem;
+    transition: 0.2s;
+}
+
+#listButton:hover> #hide{
+    display: unset;
+    
+}
+
+#hide{
+    display: none;
+    /* border: #000 solid; */
+    
+}
+
+
+.numbersLink{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    border: solid 2px transparent;
+    
+}
+
 
 #container-fluid{
     /* border: #729557 solid; */
@@ -67,8 +102,10 @@ text-align: center;
 }
 
 .h3Div{
-    border: #729557 solid;
-    width: 80%;
+    /* border: #729557 solid; */
+    /* border-radius: 20px; */
+    background-color: #E6ECE4;
+    width: 90%;
 }
 
 .div1Child{
