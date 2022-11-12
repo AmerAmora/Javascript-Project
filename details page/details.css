@@ -1,0 +1,143 @@
+.nav-style{
+    color: white;
+    background-color:#729557 ;
+    height: 70px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+.color-font{
+    color: white;
+}
+.nav-items-float-right{
+    margin-left: 70%;
+}
+
+body{
+    background-color: #E6ECE4;
+}
+
+#container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: #729557 solid; */
+}
+
+#container-fluid{
+    /* border: #729557 solid; */
+    height: 1050vh;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#div1{
+    
+    /* border: #729557 solid; */
+    height: 230vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5rem;
+    
+
+}
+
+#div2{
+    /* border: #729557 solid; */
+    height: 460vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+h3{
+text-align: center;
+
+}
+
+.h3Div{
+    border: #729557 solid;
+    width: 80%;
+}
+
+.div1Child{
+    border: #729557 solid;
+
+    
+}
+
+.question{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ol{
+    font-size: 20px;
+}
+
+.yourAnswer{
+    border: rgb(134, 134, 134) solid 0.5px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 480px){
+
+
+    #container-fluid{
+        height: 780vh;
+    }
+
+    #div1{
+        height: 160vh;
+    }
+
+    .question{
+        font-size: 10px;
+    }
+
+    ol{
+        font-size: 10px;
+    }
+
+    .yourAnswer{
+        height: 20px;
+        font-size: 10px;
+        
+    }
+
+    #div2{
+        height: 360vh;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 15px;
+        
+        }
+
+
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px){
+    #div2{
+        height: 500vh;
+    }
+}
