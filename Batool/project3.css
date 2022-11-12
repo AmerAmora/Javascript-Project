@@ -5,13 +5,19 @@
     transition: 2s;
 
 }
-
+.effect-fontaw{
+    
+}
+.effect-fontaw:hover{
+    color: gray;
+}
 .effect:hover {
 
     font-size: xx-large;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
+
 /* .next{
     font-size: 120px;
 } */
@@ -33,6 +39,29 @@
 
 }
 
+/* slider next and previous button  */
+.next {
+    position: absolute;
+    margin-left: -16%;
+    margin-top: 300px;
+    background-color: #6DA6A1;
+    padding: 14px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    /* font-size: xxx-large; */
+}
+
+.previous {
+    position: absolute;
+    margin-left: -90%;
+    margin-top: 300px;
+    background-color: #6DA6A1;
+    padding: 14px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
 
 .div-style {
     width: 80%;
@@ -182,7 +211,17 @@
 
     }
 
-
+/* slider next and previous button  */
+.next {
+    position: absolute;
+    margin-left: -30%;
+    margin-top: 300px;
+    background-color: #6DA6A1;
+    padding: 14px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
 
     .style-five-star {
         margin-left: 0%;
@@ -273,6 +312,9 @@
     .nav-style {
         width: 100%;
     }
+
+
+    
 
     .div-style {
         width: 100%;
