@@ -7,31 +7,37 @@ var img = document.getElementById("english-image");
 var slidernumber = 1;
 
 next.onclick = function () {
-    if(slidernumber==images.length)
-    {
-        slidernumber=1;
+    if (slidernumber == images.length) {
+        slidernumber = 1;
     }
     img.src = images[slidernumber];
     slidernumber++;
 
 }
 
-previous.onclick=function(){
-    if(slidernumber<0)
-    {
-        slidernumber=images.length-1;
+previous.onclick = function () {
+    if (slidernumber < 0) {
+        slidernumber = images.length - 1;
     }
 
-    img.setAttribute("src",images[slidernumber]);
+    img.setAttribute("src", images[slidernumber]);
     slidernumber--;
 }
 
-img.onmouseover=function()
-{
-    img.src=images[0];
+img.onmouseover = function () {
+    if (slidernumber == images.length) {
+        slidernumber = 1;
+    }
+    img.src = images[slidernumber];
+    slidernumber++;
 }
 
-img.onmouseleave=function()
-{
-    img.src=images[1];
-}
+// img.onmouseleave=function()
+// {
+//     if (slidernumber < 0) {
+//         slidernumber = images.length - 1;
+//     }
+
+//     img.setAttribute("src", images[slidernumber]);
+//     slidernumber--;
+// }

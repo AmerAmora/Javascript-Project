@@ -17,7 +17,12 @@
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
+.Sign-in{
 
+}
+.sign-in :hover{
+    text-shadow: 2px 2px red ;
+}
 /* .next{
     font-size: 120px;
 } */
@@ -64,9 +69,9 @@
 }
 
 .div-style {
-    width: 80%;
-    margin-left: 10%;
-    border: 3px solid grey;
+    width: 100%;
+    /* margin-left: 10%; */
+    /* border: 3px solid grey; */
 
 }
 
@@ -129,11 +134,11 @@
 }
 
 .div-style-know-us {
-    height: 740px;
+    height: 400px;
     background-color: #6DA6A1;
-    width: 80%;
-    margin-left: 10%;
-    border: 3px solid grey;
+    width: 100%;
+    /* margin-left: 10%; */
+    /* border: 3px solid grey; */
 
 }
 
@@ -372,7 +377,7 @@
         background-color: #6DA6A1;
         width: 100%;
         margin-left: 0%;
-        border: 3px solid grey;
+        /* border: 3px solid grey; */
     }
 
     .we1 {
