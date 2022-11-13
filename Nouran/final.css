@@ -1,0 +1,14 @@
+.main{
+    background-image: url("religious-satisfied-female-model-has-arms-folded-looks-aside-has-pleased-expression-wears-pink-scarf-head-white-shirt-being-deep-thoughts-stands-blue-wall-copy-space-text.jpg");
+    height: 150vh;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    position: absolute;
+    left:50%;
+    top:10%;
+}
+
+
