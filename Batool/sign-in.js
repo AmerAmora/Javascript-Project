@@ -10,7 +10,7 @@ function signin() {
             console.log(check);
             break;
         }
-        else { check = false; }
+    
 
     }
     if (check == false) { alert("Wrong username or pw"); }

@@ -41,3 +41,6 @@
 //     img.setAttribute("src", images[slidernumber]);
 //     slidernumber--;
 // }
+
+
+var x=document.getElementById("opinion1")

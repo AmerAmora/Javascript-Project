@@ -1,20 +1,25 @@
 /* movement in css (effect) */
 
-.navbar-collapse{
+.navbar-collapse {
     flex-grow: 0;
 }
 
-.navUL{
+.navUL {
 
     margin-left: 50%;
 }
-  .navtext {
- color: white;
- font-size: 1.5rem;
- text-decoration: none;
- margin-left: 30px;
- margin-right: 20px;
 
+.navtext {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 20px;
+
+}
+
+.a {
+    text-decoration: none;
 }
 
 .effect {
@@ -22,24 +27,26 @@
     transition: 2s;
 
 }
-.effect-fontaw{
 
-}
-.effect-fontaw:hover{
+.effect-fontaw {}
+
+.effect-fontaw:hover {
     color: gray;
 }
+
 .effect:hover {
 
     font-size: xx-large;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
-.Sign-in{
 
+.Sign-in {}
+
+.sign-in :hover {
+    text-shadow: 2px 2px red;
 }
-.sign-in :hover{
-    text-shadow: 2px 2px red ;
-}
+
 /* .next{
     font-size: 120px;
 } */
@@ -59,7 +66,8 @@
 .nav-items-float-right {
     margin-left: 60%;
 
-} */ */
+} */
+*/
 
 /* slider next and previous button  */
 .next {
@@ -85,7 +93,7 @@
     font-weight: bold;
 }
 
-#You-are-here{
+#You-are-here {
     position: absolute;
     color: rgb(107, 105, 105);
     font-size: 65px;
@@ -95,12 +103,14 @@
 
 .div-style {
     width: 100%;
+
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
 
 
 }
-#You-are-here-con{
+
+#You-are-here-con {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -108,12 +118,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#You-are-here-con:hover{
+
+#You-are-here-con:hover {
     background-image: url(images/hijabi2.jpg);
 }
 
 .style-five-star {
-    margin-left: 36%;
+    margin-left: 40%;
     margin-top: 12px;
 }
 
@@ -124,7 +135,7 @@
 }
 
 .style-english-quizz {
-    margin-left: 39%;
+    margin-left: 42%;
     margin-top: 12px;
 }
 
@@ -136,20 +147,23 @@
     margin-bottom: 52px;
 }
 
+
+
 .div-opinion-trainee {
     width: 50%;
     height: 350px;
-    border: 15px solid #BBD8DE;;
+
+
     border-radius: 20px;
     margin-left: 30%;
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: #F4F3F3;
 
 
 }
 
 .what-your-opinion {
-    margin-left: 20px;
+    margin-left: -160px;
     margin-top: 40px;
     text-align: center;
     font-style: italic;
@@ -159,20 +173,86 @@
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    margin-left: -20%;
 }
 
-.answer {
+#opinion1 {
+    width: 30%;
+    height: 350px;
+    background-color: #BBD8DE;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: -12%;
+    background-image: url(images/hijabi.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.opinion1-container {
+    margin-top: 0%;
+}
+
+#h1-opinion1 {
+    text-align: center;
+
+    display: none;
+    color: white;
+
+}
+
+#opinion1:hover {
+    background-image: none;
+}
+
+#h1-opinion1:hover {
+    display: inline-block;
+}
+
+#opinion2 {
+    width: 30%;
+    height: 350px;
+    background-color: #BBD8DE;
+    display: inline-block;
+    margin-left: 60%;
+    margin-top: -57%;
+    background-image: url(images/hijabi.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.opinion2-container {
+    margin-top: 0%;
+}
+
+#h1-opinion2 {
+    text-align: center;
+
+    display: none;
+    color: white;
+
+}
+
+#opinion2:hover {
+    background-image: none;
+}
+
+#h1-opinion2:hover {
+    display: inline-block;
+}
+
+/* .answer {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
     margin-left: 25%;
     margin-right: 10%;
     margin-top: 40px;
-}
+} */
 
 .div-style-know-us {
     height: 400px;
-    background-color: #BBD8DE;;
+    background-color: #BBD8DE;
+    margin-top: 10%;
     width: 100%;
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
@@ -214,19 +294,22 @@
     font-size: xxx-large;
     margin-left: 70px;
     margin-top: 15px;
-    color: #BBD8DE;;
+    color: #BBD8DE;
+    ;
 }
 
 .email-footer {
     font-size: xxx-large;
     margin-left: 15px;
-    color: #BBD8DE;;
+    color: #BBD8DE;
+    ;
 }
 
 .facebook-footer {
     font-size: xxx-large;
     margin-left: 15px;
-    color: #BBD8DE;;
+    color: #BBD8DE;
+    ;
 }
 
 .position-fullStack-at-tablet {}
@@ -243,7 +326,7 @@
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
-    #You-are-here-con{
+    #You-are-here-con {
         width: 100%;
         height: 100vh;
         position: relative;
@@ -251,14 +334,15 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    #You-are-here{
+
+    #You-are-here {
         position: absolute;
         color: rgb(107, 105, 105);
         font-size: 20px;
         left: 7rem;
         top: 10rem;
     }
-    
+
     .nav-style {
         width: 100%;
     }
@@ -266,22 +350,22 @@
     .div-style {
         width: 100%;
         margin-left: 0%;
-        
+
 
 
     }
 
-/* slider next and previous button  */
-.next {
-    position: absolute;
-    margin-left: -30%;
-    margin-top: 300px;
-    background-color: #6DA6A1;
-    padding: 14px;
-    border-radius: 12px;
-    color: white;
-    font-weight: bold;
-}
+    /* slider next and previous button  */
+    .next {
+        position: absolute;
+        margin-left: -30%;
+        margin-top: 300px;
+        background-color: #6DA6A1;
+        padding: 14px;
+        border-radius: 12px;
+        color: white;
+        font-weight: bold;
+    }
 
     .style-five-star {
         margin-left: 0%;
@@ -369,8 +453,8 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
-    
-    #You-are-here{
+
+    #You-are-here {
         position: absolute;
         color: rgb(107, 105, 105);
         font-size: 36px;
@@ -383,7 +467,7 @@
     }
 
 
-    
+
 
     .div-style {
         width: 100%;
