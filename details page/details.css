@@ -1,16 +1,15 @@
-.nav-style{
-    color: white;
-    background-color:#729557 ;
-    height: 70px;
-    font-size: large;
-    color: white;
-    font-weight: bold;
+.navbar-collapse {
+    
+    flex-grow: 0;
 }
-.color-font{
-    color: white;
-}
-.nav-items-float-right{
-    margin-left: 70%;
+
+  .navtext {
+ color: white;
+ font-size: 1.5rem;
+ text-decoration: none;
+ margin-left: 30px;
+ margin-right: 20px;
+
 }
 
 body{
@@ -167,6 +166,15 @@ ol{
         text-align: center;
         font-size: 15px;
         
+        }
+
+        #listButton{
+            position: fixed;
+            left: 93%;
+            top: 15%;
+            height: 30px;
+            width: 40px;
+            display: none;
         }
 
 

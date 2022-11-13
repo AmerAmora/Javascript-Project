@@ -1,5 +1,18 @@
 /* movement in css (effect) */
 
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+  .navtext {
+ color: white;
+ font-size: 1.5rem;
+ text-decoration: none;
+ margin-left: 30px;
+ margin-right: 20px;
+
+}
+
 .effect {
 
     transition: 2s;
@@ -26,7 +39,7 @@
 /* .next{
     font-size: 120px;
 } */
-.nav-style {
+/* .nav-style {
     color: white;
     background-color: #6DA6A1;
     height: 80px;
@@ -37,12 +50,12 @@
 
 .color-font {
     /* color: white; */
-}
+/* }
 
 .nav-items-float-right {
     margin-left: 60%;
 
-}
+} */ */
 
 /* slider next and previous button  */
 .next {
@@ -68,11 +81,31 @@
     font-weight: bold;
 }
 
+#You-are-here{
+    position: absolute;
+    color: rgb(107, 105, 105);
+    font-size: 65px;
+    left: 50rem;
+    top: 10rem;
+}
+
 .div-style {
     width: 100%;
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
 
+
+}
+#You-are-here-con{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(images/hijabi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#You-are-here-con:hover{
+    background-image: url(images/hijabi2.jpg);
 }
 
 .style-five-star {
@@ -102,7 +135,7 @@
 .div-opinion-trainee {
     width: 50%;
     height: 350px;
-    border: 15px solid #6DA6A1;
+    border: 15px solid #BBD8DE;;
     border-radius: 20px;
     margin-left: 30%;
     margin-top: 40px;
@@ -135,7 +168,7 @@
 
 .div-style-know-us {
     height: 400px;
-    background-color: #6DA6A1;
+    background-color: #BBD8DE;;
     width: 100%;
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
@@ -177,19 +210,19 @@
     font-size: xxx-large;
     margin-left: 70px;
     margin-top: 15px;
-    color: #6DA6A1;
+    color: #BBD8DE;;
 }
 
 .email-footer {
     font-size: xxx-large;
     margin-left: 15px;
-    color: #6DA6A1;
+    color: #BBD8DE;;
 }
 
 .facebook-footer {
     font-size: xxx-large;
     margin-left: 15px;
-    color: #6DA6A1;
+    color: #BBD8DE;;
 }
 
 .position-fullStack-at-tablet {}

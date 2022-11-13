@@ -1,36 +1,36 @@
 
-var images = ["images/one.jfif", "images/two.jpg", "images/three.jpg"];
+// var images = ["images/hijabi.jpg", "images/hijabi.jpg", "images/hijabi2.jpg"];
 
-var previous = document.querySelector(".previous");
-var next = document.querySelector(".next");
-var img = document.getElementById("english-image");
-var slidernumber = 1;
+// var previous = document.querySelector(".previous");
+// var next = document.querySelector(".next");
+// var img = document.getElementById("english-image");
+// var slidernumber = 1;
 
-next.onclick = function () {
-    if (slidernumber == images.length) {
-        slidernumber = 1;
-    }
-    img.src = images[slidernumber];
-    slidernumber++;
+// next.onclick = function () {
+//     if (slidernumber == images.length) {
+//         slidernumber = 1;
+//     }
+//     img.src = images[slidernumber];
+//     slidernumber++;
 
-}
+// }
 
-previous.onclick = function () {
-    if (slidernumber < 0) {
-        slidernumber = images.length - 1;
-    }
+// previous.onclick = function () {
+//     if (slidernumber < 0) {
+//         slidernumber = images.length - 1;
+//     }
 
-    img.setAttribute("src", images[slidernumber]);
-    slidernumber--;
-}
+//     img.setAttribute("src", images[slidernumber]);
+//     slidernumber--;
+// }
 
-img.onmouseover = function () {
-    if (slidernumber == images.length) {
-        slidernumber = 1;
-    }
-    img.src = images[slidernumber];
-    slidernumber++;
-}
+// img.onmouseover = function () {
+//     if (slidernumber == images.length) {
+//         slidernumber = 1;
+//     }
+//     img.src = images[slidernumber];
+//     slidernumber++;
+// }
 
 // img.onmouseleave=function()
 // {
