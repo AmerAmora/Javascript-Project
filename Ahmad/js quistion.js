@@ -166,14 +166,23 @@ var id = 0;
 next.addEventListener("click", () => {
 start = false;
 if (id <5) {
-   
+   if(id==4){
+    document.getElementById("finish").style.display="block";
+    document.getElementById("next").style.display="none";
+    localStorage.setItem("Answer"+id,text1);
+    //  console.log(localStorage.getItem("Answer"+id));
+    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+    console.log(selected);
+}
+else{
+
      localStorage.setItem("Answer"+id,text1);
     //  console.log(localStorage.getItem("Answer"+id));
     if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
     console.log(selected);
     id++;
    
-    iterate(id);
+    iterate(id);}
     // console.log(id);
     
 }
