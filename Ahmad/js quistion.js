@@ -161,35 +161,33 @@ var arr;
 
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
+const finish=document.getElementById("finish");
 var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
 if (id <5) {
-   if(id==4){
-    document.getElementById("finish").style.display="block";
-    document.getElementById("next").style.display="none";
-    localStorage.setItem("Answer"+id,text1);
-    //  console.log(localStorage.getItem("Answer"+id));
-    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
-    console.log(selected);
-}
-else{
-
-     localStorage.setItem("Answer"+id,text1);
-    //  console.log(localStorage.getItem("Answer"+id));
-    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
-    console.log(selected);
-    id++;
-   
-    iterate(id);}
-    // console.log(id);
-    
+    if(id+1==4){
+        document.getElementById("finish").style.display="block";
+        document.getElementById("next").style.display="none";}
+        localStorage.setItem("Answer"+id,text1);
+        //  console.log(localStorage.getItem("Answer"+id));
+        if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+        console.log(selected);
+        selected="";
+        id++;
+        iterate(id);
 }
 localStorage.setItem("ImitateCounter",ImitateCounter);
 localStorage.setItem("result",result);
 })
+finish.addEventListener("click", () => {
+    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
 
+    localStorage.setItem("ImitateCounter",ImitateCounter);
+    localStorage.setItem("result",result);
+
+})
 
 //guide Section
 let guide = document.querySelector("#guide");

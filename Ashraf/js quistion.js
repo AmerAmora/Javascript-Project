@@ -1,6 +1,6 @@
 var text1;
 var selected;
-var result=0;
+var result=Number(localStorage.getItem("result"));
 var ImitateCounter=0;
 // Questions will be asked
 const Questions = [{
@@ -47,17 +47,6 @@ const Questions = [{
 {
     id: 4,
     q: "5)If I ----- the choice of making either an oral or a written report, I ------ the second alternative.",
-    a: [{ text: "vA) gave / could pick", isCorrect: false },
-        { text: "B) had been given / might pick", isCorrect: false },
-        { text: "C) were given / would pick", isCorrect: true },
-        { text: "D) would have given / had picked", isCorrect: false }
-    ]
-
-},
-
-{
-    id: 5,
-    q: "5)If I ----- the choice of making either an oral or a written report, I ------ the second alternative.",
     a: [{ text: "A) gave / could pick", isCorrect: false },
         { text: "B) had been given / might pick", isCorrect: false },
         { text: "C) were given / would pick", isCorrect: true },
@@ -67,7 +56,7 @@ const Questions = [{
 },
 
 {
-    id: 6,
+    id: 5,
     q: "6)You would not expect anyone ----- intelligent to make----- stupid mistake, but he did so.",
     a: [{ text: "A) too / such", isCorrect: false },
         { text: "B) too much / those", isCorrect: false },
@@ -78,7 +67,7 @@ const Questions = [{
 },
 
 {
-    id: 7,
+    id: 6,
     q: "7)----- a celebrity arrives in Istanbul, the first question reporters ask them is ---- they like Istanbul.",
     a: [{ text: "A) During / whether", isCorrect: false },
         { text: "B) Until / if", isCorrect: false },
@@ -89,7 +78,7 @@ const Questions = [{
 },
 
 {
-    id: 8,
+    id: 7,
     q: "8)Despite my insistence, Ashraf didn’t tell me ------ he didn’t like me and my family.",
     a: [{ text: "A) the reason", isCorrect: false },
         { text: "B) even if", isCorrect: false },
@@ -99,7 +88,7 @@ const Questions = [{
 
 },
 {
-    id: 9,
+    id: 8,
     q: "9)Tourists ----- when large numbers of middle-class people ----- to join the more wealthy aristocratic travellers.",
     a: [{ text: "A) have originated / had begun", isCorrect: false },
         { text: "B) had originated / began", isCorrect: false },
@@ -109,7 +98,7 @@ const Questions = [{
 
 },
 {
-    id: 10,
+    id: 9,
     q: "10)The wounded hunter------ on the ground for almost an hour when, coincidentally, he ------ by another hunter, who must have keen eyes.",
     a: [{ text: "A) has been lying / is spotting", isCorrect: false },
         { text: "B) will have lain / had been spotted", isCorrect: false },
@@ -228,20 +217,32 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id <11) {
+if (id <10) {
    
-     localStorage.setItem("Answer"+id,text1);
-    //  console.log(localStorage.getItem("Answer"+id));
-    console.log(selected);
-    id++;
-    if(selected=="true"){ result = result+5; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
-    iterate(id);
-    // console.log(id);
+    if(id+1==9){
+        document.getElementById("finish").style.display="block";
+        document.getElementById("next").style.display="none";}
+        localStorage.setItem("Answer"+id,text1);
+        //  console.log(localStorage.getItem("Answer"+id));
+        if(selected=="true"){ result = result+5; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+        console.log(selected);
+        selected="";
+        id++;
+       
+        iterate(id);
+    
     
 }
 localStorage.setItem("ImitateCounter",ImitateCounter);
 localStorage.setItem("result",result);
-})
+});
+finish.addEventListener("click", () => {
+    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+
+    localStorage.setItem("ImitateCounter",ImitateCounter);
+    localStorage.setItem("result",result);
+
+});
 
 
 //guide Section

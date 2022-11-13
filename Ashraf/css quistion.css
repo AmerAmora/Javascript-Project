@@ -108,7 +108,19 @@ body{
     color:black;
 }
 
-
+#finish
+{
+    color: white;
+	/* background-color: #BF3325; */
+    border-radius: 30px 5px;
+    border: #FF5235 solid;
+    color:black;
+    width:20vw;
+	height: 8vh;
+	padding: 5px;
+	font-size: larger;
+display: none;
+}
 
 
 
