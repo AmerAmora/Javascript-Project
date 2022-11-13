@@ -1,33 +1,38 @@
 
-function getFname() {
+var i = 1;
+function signup() {
+
+    localStorage.setItem("i", i);
     var firstname = document.getElementById("firstname").value;
     console.log(firstname);
-    localStorage.setItem("firstname", firstname);
-}
+    localStorage.setItem("firstname" + i, firstname);
 
-function getLname() {
+
+
     var lastname = document.getElementById("lastname").value;
     console.log(lastname);
-    localStorage.setItem("lastname", lastname);
-}
+    localStorage.setItem("lastname" + i, lastname);
 
-function getEmail() {
+
+
     var gEmail = document.getElementById("email").value;
     console.log(gEmail);
-    localStorage.setItem("Email", gEmail);
-}
+    localStorage.setItem("Email" + i, gEmail);
 
-function getpassword() {
+
+
     var pass = document.getElementById("password").value;
 
 
-    localStorage.setItem("password", pass);
-}
+    localStorage.setItem("password" + i, pass);
 
-function ConfirmPsss() {
+
+
+
     var Confirmpass = document.getElementById("confirmpassword").value;
 
-    localStorage.setItem("Confirm-password", Confirmpass);
+    localStorage.setItem("Confirm-password" + i, Confirmpass);
+    i++;
 }
 
 
