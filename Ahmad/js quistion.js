@@ -169,9 +169,10 @@ if (id <5) {
    
      localStorage.setItem("Answer"+id,text1);
     //  console.log(localStorage.getItem("Answer"+id));
+    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
     console.log(selected);
     id++;
-    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+   
     iterate(id);
     // console.log(id);
     
@@ -183,7 +184,7 @@ localStorage.setItem("result",result);
 
 //guide Section
 let guide = document.querySelector("#guide");
-let exit = document.querySelector("#exit");
+
 let continueBtn = document.querySelector("#continue");
 let panel =document.querySelector(".panel");
 
