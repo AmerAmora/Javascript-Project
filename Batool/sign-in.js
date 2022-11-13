@@ -12,3 +12,10 @@ function signin()
     }
 
 }
+
+function getyourname()
+{
+var x=localstorage.getItem("firstname");
+console.log(x);
+
+}
