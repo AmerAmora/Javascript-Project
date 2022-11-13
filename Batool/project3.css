@@ -197,6 +197,7 @@
 
     display: none;
     color: white;
+    
 
 }
 
@@ -204,7 +205,7 @@
     background-image: none;
 }
 
-#h1-opinion1:hover {
+#opinion1:hover>#h1-opinion1 {
     display: inline-block;
 }
 
@@ -229,16 +230,20 @@
 
     display: none;
     color: white;
+    
 
 }
 
 #opinion2:hover {
-    background-image: none;
+    background-image:url();
 }
-
-#h1-opinion2:hover {
+#opinion2:hover>#h1-opinion2{
     display: inline-block;
 }
+
+/* #h1-opinion2:hover {
+    display: inline-block;
+} */
 
 /* .answer {
     text-align: center;
