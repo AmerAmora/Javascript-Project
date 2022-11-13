@@ -52,7 +52,7 @@
         <img src="Media/true.png" class="card-img" alt="..."style="opacity: 0.3;" >
         <div class="card-img-overlay">
           <p class="cardTtitle">Your correct Answers</p>
-          <p class="cardText">You Answered 18 out of 20 Questions correctly</p>
+          <p class="cardText" id="correctanswers">You Answered 18 out of 20 Questions correctly</p>
          
         </div>
       </div>
@@ -60,7 +60,7 @@
         <img src="Media/False.png" class="card-img" alt="..." style="opacity: 0.3;">
         <div class="card-img-overlay">
           <p class="cardTtitle">Your Wrong Answers</p>
-          <p class="cardText">You Answered 2 out of 20 Questions incorrectly</p>
+          <p class="cardText" id="wronganswers">You Answered 2 out of 20 Questions incorrectly</p>
           
         </div>
       </div>
@@ -68,34 +68,33 @@
     <div class="progress-container">
 
 
-      <div class="skill-bars">
-        <div class="bar">
-          <div class="info">
-            <span>Imitate Level</span>
-          </div>
-          <div class="progress-line html">
-            <span></span>
-          </div>
-        </div>
-        <div class="bar">
-          <div class="info">
-            <span>Adapt Level</span>
-          </div>
-          <div class="progress-line css">
-            <span></span>
-          </div>
-        </div>
-        <div class="bar">
-          <div class="info">
-            <span>Transpose Level</span>
-          </div>
-          <div class="progress-line jquery">
-            <span></span>
-          </div>
-        </div>
+      
+            <div class="col-md-6">
+                <div class="progress red">
+                    <h3 class="progress-title">Imitate Level</h3>
+                    <div class="progress-bar">
+                        <div class="progress-value" id="imitateLevel">80%</div>
+                    </div>
+                </div>
+     
+                <div class="progress red">
+                    <h3 class="progress-title">Adapt Level</h3>
+                    <div class="progress-bar">
+                        <div class="progress-value" id="adaptLevel"></div>
+                    </div>
+                </div>
+                <div class="progress red">
+                  <h3 class="progress-title" >Transpose Level</h3>
+                  <div class="progress-bar">
+                      <div class="progress-value" id="transposeLevel"></div>
+                  </div>
+              </div>
 
-    </div>
-  </div>
+            </div>
+            
+            
+        </div>
+   
     <div class="end-container">
       <div>
        <p class="endMain">We will get in touch with you soon</p>
@@ -106,8 +105,8 @@
       <Div class="links-container"> 
         <div class="links">
           <a href="#">Check Your Answers</a></div> 
-          <div class="links"> <a href="#">Send Your Feedback</a></div></Div>
+          <div class="links"> <a href="#">Visit Home Page</a></div></Div>
 
-
+<script src="JS/Result.js"></script>
 </body>
 </html>
