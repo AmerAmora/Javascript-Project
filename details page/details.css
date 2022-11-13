@@ -120,6 +120,7 @@ text-align: center;
 
 ol{
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .yourAnswer{
@@ -129,6 +130,8 @@ ol{
     font-size: 20px;
     padding-left: 20px;
 }
+
+
 
 
 
