@@ -18,22 +18,23 @@
 /* big div for sign in  */
 .div-style-sign-in
 {
-    width: 80%;
-    height: 600px;
-    background-color:#E2EAE9;
-    margin-left: 10%;
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/4.jpg);
+    background-size: cover;
+    
     position: relative;
 }
 
 /* div white for name && password  */
 .white-div-password{
-    width: 40%;
+    width: 35%;
     height: 400px;
     background-color: white;
     position: absolute;
    
-    margin-left: 50%;
-    margin-top: 90px;
+    margin-left: 55%;
+    margin-top: 150px;
     border-radius: 12px;
 
 }
@@ -41,7 +42,7 @@
 /* your name */
 .label-name{
     margin-top: 16%;
-    margin-left: 10%;
+    margin-left: 12%;
     font-size: x-large;
     font-weight: bold;
   
@@ -50,7 +51,7 @@
 /* yourpaaword */
 .label-password{
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 12%;
     font-size: x-large;
     font-weight: bold;
 }
@@ -61,7 +62,7 @@
     font-size: x-large;
     font-weight: bold;
     padding: 10px;
-    background-color: #6DA6A1;
+    background-color: #BBD8DE;
     border-radius: 12px;
 }
 
