@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #E6ECE4;
+    background-color: #cee4e9;
 }
 
 #container{
@@ -103,7 +103,7 @@ text-align: center;
 .h3Div{
     /* border: #729557 solid; */
     /* border-radius: 20px; */
-    background-color: #E6ECE4;
+    background-color: #cee4e9;
     width: 90%;
 }
 
@@ -120,15 +120,19 @@ text-align: center;
 
 ol{
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .yourAnswer{
-    border: rgb(134, 134, 134) solid 0.5px;
+    /* border: rgb(134, 134, 134) solid 0.5px; */
     border-radius: 8px;
     height: 40px;
     font-size: 20px;
     padding-left: 20px;
+    background-color: white;
 }
+
+
 
 
 

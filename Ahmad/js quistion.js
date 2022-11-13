@@ -5,52 +5,52 @@ var ImitateCounter=0;
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
-        { text: "mumbai", isCorrect: false }
+    q: "We studied the question ______.",
+    a: [{ text: "scientific", isCorrect: false },
+        { text: "science", isCorrect: false },
+        { text: "scientist", isCorrect: false },
+        { text: "scientifically", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false },
-        { text: "phuket", isCorrect: false },
-        { text: "Ayutthaya", isCorrect: false },
-        { text: "Bangkok", isCorrect: true }
+    q: "______ the war, most Italians were farmers.",
+    a: [{ text: "From", isCorrect: false },
+        { text: "While", isCorrect: false },
+        { text: "Before", isCorrect: true },
+        { text: "When", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    q: "Where were you last night?",
+    a: [{ text: "I were at home.", isCorrect: false },
+        { text: "I am been to the movies.", isCorrect: false },
+        { text: "I was to an Indian restaurant.", isCorrect: false },
+        { text: "I was at the museum with Nouran.", isCorrect: true }
     ]
 
 },
 {
     id: 3,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    q: "Amer has always ______ things very quickly and efficiently.",
+    a: [{ text: "does", isCorrect: false },
+        { text: "done", isCorrect: true },
+        { text: "did", isCorrect: false},
+        { text: "do", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "What is the capitaldsvgsdvsdvsdv",
-    a: [{ text: "vsdv", isCorrect: false },
-        { text: "ccascas", isCorrect: false },
-        { text: "gandacscahinagar", isCorrect: true },
-        { text: "rajcaackot", isCorrect: false }
+    q: "Where are you going?",
+    a: [{ text: "I am going to my mother's house.", isCorrect: true },
+        { text: "I going at work.", isCorrect: false },
+        { text: "I go to the store.", isCorrect: false },
+        { text: "I am going to Ahmads house.", isCorrect: false }
     ]
 
 }
@@ -169,9 +169,10 @@ if (id <5) {
    
      localStorage.setItem("Answer"+id,text1);
     //  console.log(localStorage.getItem("Answer"+id));
+    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
     console.log(selected);
     id++;
-    if(selected=="true"){ result = result+4; ImitateCounter =ImitateCounter+1;} console.log(result);console.log(ImitateCounter)  ;
+   
     iterate(id);
     // console.log(id);
     
@@ -183,7 +184,7 @@ localStorage.setItem("result",result);
 
 //guide Section
 let guide = document.querySelector("#guide");
-let exit = document.querySelector("#exit");
+
 let continueBtn = document.querySelector("#continue");
 let panel =document.querySelector(".panel");
 
