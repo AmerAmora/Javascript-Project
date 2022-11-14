@@ -3,54 +3,60 @@ var selected;
 var result = 0;
 var ImitateCounter = 0;
 // Questions will be asked
-const Questions = [{
+const Questions = [
+
+{
     id: 0,
-    q: "We studied the question ______.",
-    a: [{ text: "scientific", isCorrect: false },
-    { text: "science", isCorrect: false },
-    { text: "scientist", isCorrect: false },
-    { text: "scientifically", isCorrect: true }
+    q: "I was driving ______ the road when my car started making a funny sound.",
+    a: [{ text: "in", isCorrect: true },
+    { text: "at", isCorrect: false },
+    { text: "down", isCorrect: false },
+    { text: "through", isCorrect: false }
     ]
 
 },
+
+
 {
     id: 1,
-    q: "______ the war, most Italians were farmers.",
-    a: [{ text: "From", isCorrect: false },
-    { text: "While", isCorrect: false },
-    { text: "Before", isCorrect: true },
-    { text: "When", isCorrect: false }
+    q: "She ______ blue velvet to the party last night",
+    a: [{ text: "worn", isCorrect: true },
+    { text: "war", isCorrect: false },
+    { text: "weared", isCorrect: false },
+    { text: "wore", isCorrect: false }
     ]
 
 },
+
 {
     id: 2,
-    q: "Where were you last night?",
-    a: [{ text: "I were at home.", isCorrect: false },
-    { text: "I am been to the movies.", isCorrect: false },
-    { text: "I was to an Indian restaurant.", isCorrect: false },
-    { text: "I was at the museum with Nouran.", isCorrect: true }
+    q: "What are you wearing to the party?.",
+    a: [{ text: "Wear wearing shirts.", isCorrect: false },
+    { text: "Formal dress wearing we're.", isCorrect: false  },
+    { text: "We're wearing suits.", isCorrect: true },
+    { text: "I wear a black suit.", isCorrect: false }
     ]
 
 },
+
 {
     id: 3,
-    q: "Amer has always ______ things very quickly and efficiently.",
-    a: [{ text: "does", isCorrect: false },
-    { text: "done", isCorrect: true },
-    { text: "did", isCorrect: false },
-    { text: "do", isCorrect: false }
+    q: "The Olympic champion dove ______ the swimming pool from ten meters high.",
+    a: [{ text: "to", isCorrect: false },
+    { text: "into", isCorrect: true },
+    { text: "onto", isCorrect: false },
+    { text: "inside", isCorrect: false }
     ]
 
 },
 
 {
     id: 4,
-    q: "Where are you going?",
-    a: [{ text: "I am going to my mother's house.", isCorrect: true },
-    { text: "I going at work.", isCorrect: false },
-    { text: "I go to the store.", isCorrect: false },
-    { text: "I am going to Ahmads house.", isCorrect: false }
+    q: "You two are always fighting. Why can't you ______?",
+    a: [{ text: "get along", isCorrect: false },
+    { text: "get over", isCorrect: false },
+    { text: "get off", isCorrect: false },
+    { text: "get through", isCorrect: true }
     ]
 
 }
@@ -167,7 +173,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
     start = false;
-    if (id < 5) {
+    if (id < 6) {
         if (id + 1 == 4) {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
@@ -193,7 +199,7 @@ op4.style.backgroundColor = "#F0F0F0";
     localStorage.setItem("result", result);
 })
 let FinishBtn = document.querySelector("#finish");
-let Level2 = document.querySelector("#level2"); 
+let Level3 = document.querySelector("#level3"); 
 finish.addEventListener("click", () => {
     if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
 
@@ -201,7 +207,7 @@ finish.addEventListener("click", () => {
     localStorage.setItem("result", result);
     // location.href="../Batool/project3.html"
     FinishBtn.style.display = "none";
-    Level2.style.display = "block";
+    Level3.style.display = "block";
     panel.style.display = "none"
 
     
@@ -221,9 +227,11 @@ let panel = document.querySelector(".panel");
 continueBtn.addEventListener("click", () => {
     panel.style.display = "block";
     guide.style.display = "none";
+    
 })
-Level2.addEventListener("click", () => {
-   location.href="./level-2 question.html" ;
+
+Level3.addEventListener("click", () => {
+   location.href="../Ashraf/html quistion.html" ;
 })
 
 // ===============
