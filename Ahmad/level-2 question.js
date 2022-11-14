@@ -1,65 +1,65 @@
 var text1;
 var selected;
-var result = 0;
+var result = Number(localStorage.getItem("result"));
 var ImitateCounter = 0;
 // Questions will be asked
 const Questions = [
 
-{
-    id: 0,
-    q: "I was driving ______ the road when my car started making a funny sound.",
-    a: [{ text: "in", isCorrect: true },
-    { text: "at", isCorrect: false },
-    { text: "down", isCorrect: false },
-    { text: "through", isCorrect: false }
-    ]
+    {
+        id: 0,
+        q: "I was driving ______ the road when my car started making a funny sound.",
+        a: [{ text: "in", isCorrect: true },
+        { text: "at", isCorrect: false },
+        { text: "down", isCorrect: false },
+        { text: "through", isCorrect: false }
+        ]
 
-},
+    },
 
 
-{
-    id: 1,
-    q: "She ______ blue velvet to the party last night",
-    a: [{ text: "worn", isCorrect: true },
-    { text: "war", isCorrect: false },
-    { text: "weared", isCorrect: false },
-    { text: "wore", isCorrect: false }
-    ]
+    {
+        id: 1,
+        q: "She ______ blue velvet to the party last night",
+        a: [{ text: "worn", isCorrect: true },
+        { text: "war", isCorrect: false },
+        { text: "weared", isCorrect: false },
+        { text: "wore", isCorrect: false }
+        ]
 
-},
+    },
 
-{
-    id: 2,
-    q: "What are you wearing to the party?.",
-    a: [{ text: "Wear wearing shirts.", isCorrect: false },
-    { text: "Formal dress wearing we're.", isCorrect: false  },
-    { text: "We're wearing suits.", isCorrect: true },
-    { text: "I wear a black suit.", isCorrect: false }
-    ]
+    {
+        id: 2,
+        q: "What are you wearing to the party?.",
+        a: [{ text: "Wear wearing shirts.", isCorrect: false },
+        { text: "Formal dress wearing we're.", isCorrect: false },
+        { text: "We're wearing suits.", isCorrect: true },
+        { text: "I wear a black suit.", isCorrect: false }
+        ]
 
-},
+    },
 
-{
-    id: 3,
-    q: "The Olympic champion dove ______ the swimming pool from ten meters high.",
-    a: [{ text: "to", isCorrect: false },
-    { text: "into", isCorrect: true },
-    { text: "onto", isCorrect: false },
-    { text: "inside", isCorrect: false }
-    ]
+    {
+        id: 3,
+        q: "The Olympic champion dove ______ the swimming pool from ten meters high.",
+        a: [{ text: "to", isCorrect: false },
+        { text: "into", isCorrect: true },
+        { text: "onto", isCorrect: false },
+        { text: "inside", isCorrect: false }
+        ]
 
-},
+    },
 
-{
-    id: 4,
-    q: "You two are always fighting. Why can't you ______?",
-    a: [{ text: "get along", isCorrect: false },
-    { text: "get over", isCorrect: false },
-    { text: "get off", isCorrect: false },
-    { text: "get through", isCorrect: true }
-    ]
+    {
+        id: 4,
+        q: "You two are always fighting. Why can't you ______?",
+        a: [{ text: "get along", isCorrect: false },
+        { text: "get over", isCorrect: false },
+        { text: "get off", isCorrect: false },
+        { text: "get through", isCorrect: true }
+        ]
 
-}
+    }
 
 
 ]
@@ -182,12 +182,12 @@ next.addEventListener("click", () => {
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
         console.log(selected);
-// batool
+        // batool
 
-op1.style.backgroundColor = "#F0F0F0";
-op2.style.backgroundColor = "#F0F0F0";
-op3.style.backgroundColor = "#F0F0F0";
-op4.style.backgroundColor = "#F0F0F0";
+        op1.style.backgroundColor = "#F0F0F0";
+        op2.style.backgroundColor = "#F0F0F0";
+        op3.style.backgroundColor = "#F0F0F0";
+        op4.style.backgroundColor = "#F0F0F0";
 
 
 
@@ -199,7 +199,7 @@ op4.style.backgroundColor = "#F0F0F0";
     localStorage.setItem("result", result);
 })
 let FinishBtn = document.querySelector("#finish");
-let Level3 = document.querySelector("#level3"); 
+let Level3 = document.querySelector("#level3");
 finish.addEventListener("click", () => {
     if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
 
@@ -210,7 +210,7 @@ finish.addEventListener("click", () => {
     Level3.style.display = "block";
     panel.style.display = "none"
 
-    
+
 
 })
 
@@ -227,11 +227,11 @@ let panel = document.querySelector(".panel");
 continueBtn.addEventListener("click", () => {
     panel.style.display = "block";
     guide.style.display = "none";
-    
+
 })
 
 Level3.addEventListener("click", () => {
-   location.href="../Ashraf/html quistion.html" ;
+    location.href = "../Ashraf/html quistion.html";
 })
 
 // ===============
@@ -242,6 +242,6 @@ Level3.addEventListener("click", () => {
 // // let panel = document.querySelector(".panel");
 // //what happen when 'Finish' Button Will Click
 // FinishBtn.addEventListener("click", () => {
-//     panel.style.display = "none";    
+//     panel.style.display = "none";
 //     guide.style.display = "none";
 // })

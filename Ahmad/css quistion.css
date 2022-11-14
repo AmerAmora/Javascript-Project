@@ -17,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     display: none;
+
 }
 
 .question-container {
@@ -25,7 +26,7 @@ body {
     width: 80vw;
     height: 10vh;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     text-align: center;
     align-items: center;
     display: flex;
@@ -127,6 +128,7 @@ body {
     font-size: larger;
     display: none;
 }
+
 #level2 {
     color: black;
     /* background-color: #BF3325; */
@@ -158,15 +160,18 @@ body {
     height: auto;
     width: 580px;
     padding: 20px;
-    background:  #BBD8DE;
+    background: #BBD8DE;
     border-radius: 30px 10px;
     border: 1px solid #b0c4d8;
+
     /* display: none; */
 }
 
 #guide h2 {
     font-size: 60px;
     color: black;
+    font-family: Arial;
+  text-align: center;
 }
 
 #guide h4 {
@@ -175,6 +180,8 @@ body {
     display: flex;
     align-items: center;
     font-size: 20px;
+    font-family: Arial;
+    padding-left: 20px;
 }
 
 #guide #button {
@@ -191,8 +198,7 @@ body {
     border: none;
     outline: none;
     color: black;
-    background: #F0F0F0
-    ;
+    background: #F0F0F0;
     border: 1px solid #b0c4d8;
     border-radius: 20px 5px;
     font-size: 18px;
@@ -207,9 +213,9 @@ body {
     background: #92bcc4;
 }
 
-@media only screen and (min-device-width: 0) and (max-device-width: 480px){
+@media only screen and (min-device-width: 0) and (max-device-width: 480px) {
     .question-container {
-      
+
         width: 80vw;
         height: 16vh;
         font-size: 18px;
@@ -219,39 +225,40 @@ body {
         display: flex;
         justify-content: center;
         background-color: #BBD8DE;
-       
-      
+
+
     }
 
-    .option{
+    .option {
         font-size: 14px;
         width: 60vw;
     }
-    .option-container{
+
+    .option-container {
         display: flex;
         flex-wrap: wrap;
     }
 
 }
 
-@media only screen and (min-device-width:481px) and (max-device-width: 780px){
+@media only screen and (min-device-width:481px) and (max-device-width: 780px) {
 
     .question-container {
-     
+
         width: 80vw;
         height: 16vh;
         font-size: 22px;
-    
+
         text-align: center;
         align-items: center;
         display: flex;
         justify-content: center;
-       
-       
-        
+
+
+
     }
 
-    .option{
+    .option {
         font-size: 18px;
     }
 

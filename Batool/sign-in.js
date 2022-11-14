@@ -5,12 +5,16 @@ function signin() {
     var check = false;
     for (var i = 0; i < 6; i++) {
         if (username === localStorage.getItem("firstname" + i) && password === localStorage.getItem("password" + i)) {
-            check = true;
-            location.href = 'project3.html';
-            console.log(check);
-            break;
+            if (localStorage.getItem("result" + username) > 0) { location.href = "../Result.html"; check = true; break; }
+            else {
+                localStorage.setItem("loggeduser", username);
+                check = true;
+                location.href = 'project3.html';
+                console.log(check);
+                break;
+            }
         }
-    
+
 
     }
     if (check == false) { alert("Wrong username or pw"); }
@@ -22,3 +26,8 @@ function signin() {
 // console.log(x);
 
 // }
+
+var finish = localStorage.getItem("finish");
+if (finish.lenght > 1) {
+    location.href = "../Ahmads/html quistion.html"
+}
