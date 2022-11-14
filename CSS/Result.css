@@ -179,6 +179,11 @@ height: 200px;
 a{text-decoration: none; color: black; padding-left: 10px;}
 .links{ padding: 10px; padding-right: 20px; border-radius: 10px; background-color: white;}
 @media screen and (min-device-width: 0px) and (max-device-width : 480px){
+  .endMain{font-size: 28px;}
+  .links{ padding:19px;}
+  .end{padding-left: 0px;}
+  .progress{width: 300px;}
+  .progress .progress-title { width: 35%; font-size: 9px;}
     .mainImage
     {
         height: 150px;
@@ -188,10 +193,13 @@ a{text-decoration: none; color: black; padding-left: 10px;}
     .mainText
     {
         font-size: 50px ;
+        margin-left: 10px;
     }
     .secondaryText
     {
         font-size: 18px ;
+        margin-left: 15px;
+
 
     }
     .answersContainer
@@ -200,15 +208,24 @@ a{text-decoration: none; color: black; padding-left: 10px;}
 
     }
     .card{
-        height: 330px !important;
+        height: 400px !important;
     }
     .skill-bars{ width: 310px;}
 }
 @media screen and (min-device-width: 481px) and (max-device-width : 768px){
-
+  .progress{ width: 500px;}
+  .mainImage
+  {
+      width: 700px;
+      
+  }
     .card{
         height: 352px !important;
     }
+    .progress .progress-title{ width: 37%;}
+    .progress-container{margin-top: 5rem}
+    .mainText{margin-left: 100px;}
+    .cardTtitle {font-size: 30px;}
 }
 
 *{font-family: Arial;}
