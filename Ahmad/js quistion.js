@@ -186,15 +186,15 @@ op2.style.backgroundColor = "#F0F0F0";
 op3.style.backgroundColor = "#F0F0F0";
 op4.style.backgroundColor = "#F0F0F0";
 
-
+localStorage.setItem("Answer" + id, text1);
+    localStorage.setItem("ImitateCounter", ImitateCounter);
+    localStorage.setItem("result", result);
 
         selected = "";
         id++;
         iterate(id);
     }
-    localStorage.setItem("Answer" + id, text1);
-    localStorage.setItem("ImitateCounter", ImitateCounter);
-    localStorage.setItem("result", result);
+    
 })
 let FinishBtn = document.querySelector("#finish");
 let Level2 = document.querySelector("#level2"); 

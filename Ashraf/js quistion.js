@@ -255,6 +255,11 @@ finish.addEventListener("click", () => {
     var loggeduser = localStorage.getItem("loggeduser");
     localStorage.setItem("Answer" + (id+10), text1);
     localStorage.setItem("result" + loggeduser, result);
+    localStorage.setItem("trasnposeCounter"+loggeduser,trasnposeCounter);
+    localStorage.setItem("adaptCounter"+loggeduser,localStorage.getItem("adaptCounter"));
+    localStorage.setItem("ImitateCounter"+loggeduser,localStorage.getItem("ImitateCounter"));
+
+
     location.href = "../Result.html"
 });
 
