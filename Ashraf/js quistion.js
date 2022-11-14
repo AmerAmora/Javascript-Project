@@ -2,7 +2,8 @@
 var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
-var ImitateCounter = 0;
+var trasnposeCounter = 0;
+
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -224,9 +225,9 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id+10, text1);
+        localStorage.setItem("Answer" + (id+10), text1);
         //  console.log(localStorage.getItem("Answer"+id));
-        if (selected == "true") { result = result + 5; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
+        if (selected == "true") { result = result + 5; trasnposeCounter = trasnposeCounter + 1; } console.log(result); console.log(trasnposeCounter);
         console.log(selected);
         selected = "";
         id++;
@@ -243,13 +244,13 @@ next.addEventListener("click", () => {
     op4.style.backgroundColor = "#F0F0F0";
 
 
-    localStorage.setItem("ImitateCounter", ImitateCounter);
+    localStorage.setItem("trasnposeCounter", trasnposeCounter);
     localStorage.setItem("result", result);
 });
 finish.addEventListener("click", () => {
-    if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; }
-    console.log(result); console.log(ImitateCounter);
-    localStorage.setItem("ImitateCounter", ImitateCounter);
+    if (selected == "true") { result = result + 4; trasnposeCounter = trasnposeCounter + 1; }
+    console.log(result); console.log(trasnposeCounter);
+    localStorage.setItem("trasnposeCounter", trasnposeCounter);
     localStorage.setItem("result", result);
     console.log(localStorage.getItem("loggeduser"));
     var loggeduser = localStorage.getItem("loggeduser");

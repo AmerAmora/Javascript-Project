@@ -1,7 +1,8 @@
 var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
-var ImitateCounter = 0;
+var adaptCounter = 0;
+localStorage.clear();
 // Questions will be asked
 const Questions = [
 
@@ -178,9 +179,9 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id+5, text1);
+        localStorage.setItem("Answer" + (id+5), text1);
         //  console.log(localStorage.getItem("Answer"+id));
-        if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
+        if (selected == "true") { result = result + 4; adaptCounter = adaptCounter + 1; } console.log(result); console.log(adaptCounter);
         console.log(selected);
         // batool
 
@@ -195,15 +196,15 @@ next.addEventListener("click", () => {
         id++;
         iterate(id);
     }
-    localStorage.setItem("ImitateCounter", ImitateCounter);
+    localStorage.setItem("adaptCounter", adaptCounter);
     localStorage.setItem("result", result);
 })
 let FinishBtn = document.querySelector("#finish");
 let Level3 = document.querySelector("#level3");
 finish.addEventListener("click", () => {
-    if (selected == "true") { result = result + 6; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
+    if (selected == "true") { result = result + 6; adaptCounter = adaptCounter + 1; } console.log(result); console.log(adaptCounter);
 
-    localStorage.setItem("ImitateCounter", ImitateCounter);
+    localStorage.setItem("adaptCounter", adaptCounter);
     localStorage.setItem("result", result);
     // location.href="../Batool/project3.html"
     FinishBtn.style.display = "none";
