@@ -15,3 +15,13 @@ else{
     document.getElementsByClassName("yourAnswer")[i].style.backgroundColor="#D3FBE8";
 }
 }
+
+
+
+function logout() {
+
+    location.href = "../Batool/project3.html";
+
+    sessionStorage.clear();
+
+}

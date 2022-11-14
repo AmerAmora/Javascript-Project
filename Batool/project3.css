@@ -6,15 +6,17 @@
 
 .navUL {
 
-    margin-left: 50%;
+    margin-left: 150%;
 }
 
 .navtext {
-    color: white;
+    color:white;
     font-size: 1.5rem;
     text-decoration: none;
     margin-left: 30px;
     margin-right: 20px;
+    font-weight: bold;
+
 
 }
 
@@ -29,7 +31,7 @@
 
 }
 
-.effect-fontaw {}
+/* .effect-fontaw {} */
 
 .effect-fontaw:hover {
     color: gray;
@@ -42,7 +44,7 @@
 
 }
 
-.Sign-in {}
+/* .Sign-in {} */
 
 .sign-in :hover {
     text-shadow: 2px 2px red;
@@ -332,7 +334,7 @@
     ;
 }
 
-.position-fullStack-at-tablet {}
+/* .position-fullStack-at-tablet {} */
 
 .linked-in-foreveryperson {
     font-size: xx-large;
