@@ -43,4 +43,4 @@
 // }
 
 
-var x=document.getElementById("opinion1")
+var x = document.getElementById("opinion1")
