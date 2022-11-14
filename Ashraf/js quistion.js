@@ -224,7 +224,7 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id, text1);
+        localStorage.setItem("Answer" + id+10, text1);
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 5; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
         console.log(selected);
