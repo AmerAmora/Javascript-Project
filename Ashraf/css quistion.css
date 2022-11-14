@@ -23,14 +23,14 @@ body{
 	padding: 5px;
 	width: 80vw;
 	height: 10vh;
-	font-size: 35px;
+	font-size: 30px;
     font-family: Arial, Helvetica, sans-serif ;
 	text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: #FF5235;
-    color: white;
+    background-color:#BBD8DE;
+    color: black;
     border-radius: 30px 5px;
 	
 }
@@ -58,17 +58,17 @@ body{
 	padding: 10px;
 	width: 80vw;
 	height: 10vh;
-	font-size: 40px;
+	font-size: 35px;
 	
 	/* border-radius: 25%; */
     margin-top: 16px;
     border-radius: 30px 5px;
-    border: #FF5235 solid;
+    border:#BBD8DE solid;
 
 }
-.option:hover{
+/* .option:hover{
 	background-color: #FF5235;
-}
+} */
 .navigation{
 	width: 80vw;
 	height: 10vh;
@@ -86,35 +86,35 @@ body{
 	font-size: larger;
 }
 .next:hover{
-    background-color: #FF5235;
+    background-color: #BBD8DE;
 }
-.evaluate{
+/* .evaluate{
 	
 	
-    color: white;
+    color: white; */
 	/* background-color: #BF3325; */
-    border-radius: 30px 5px;
+    /* border-radius: 30px 5px;
     border: #FF5235 solid;
     color:black;
-}
-.evaluate:hover{
+} */
+/* .evaluate:hover{
     background-color: #FF5235;
-}
+} */
 .next{
-	color: white;
+	color:black;
 	/* background-color: #BF3325; */
     border-radius: 30px 5px;
-    border: #FF5235 solid;
-    color:black;
+    border: #BBD8DE solid;
+    
 }
 
 #finish
 {
-    color: white;
+    color: black;
 	/* background-color: #BF3325; */
     border-radius: 30px 5px;
-    border: #FF5235 solid;
-    color:black;
+    border: #BBD8DE solid;
+    
     width:20vw;
 	height: 8vh;
 	padding: 5px;
@@ -128,17 +128,12 @@ display: none;
 
     
 
-
-
-
-
-
 #guide,
 #quiz {
     height: auto;
     width: 580px;
     padding: 20px;
-    background: #e7f1fa;
+    background:  #BBD8DE;
     border-radius: 30px 10px;
     border: 1px solid #b0c4d8;
     /* display: none; */
@@ -146,7 +141,7 @@ display: none;
 
 #guide h2 {
     font-size: 60px;
-    color: #ff5235;
+    color: black;
 }
 
 #guide h4 {
@@ -170,8 +165,9 @@ display: none;
     margin: 10px 25px;
     border: none;
     outline: none;
-    color: #e7f1fa;
-    background: #ff5235;
+    color: black;
+    background: #F0F0F0
+    ;
     border: 1px solid #b0c4d8;
     border-radius: 20px 5px;
     font-size: 18px;
@@ -183,6 +179,56 @@ display: none;
 }
 
 #guide #button button:hover {
-    background: #e91e3a;
+    background: #92bcc4;
 }
 
+@media only screen and (min-device-width: 0) and (max-device-width: 480px){
+    .question-container {
+      
+        width: 80vw;
+        height: 16vh;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #BBD8DE;
+       
+      
+    }
+
+    .option{
+        font-size: 14px;
+        width: 60vw;
+    }
+    .option-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width: 780px){
+
+    .question-container {
+     
+        width: 80vw;
+        height: 16vh;
+        font-size: 22px;
+    
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       
+       
+        
+    }
+
+    .option{
+        font-size: 18px;
+    }
+
+
+}

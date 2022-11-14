@@ -18,6 +18,7 @@
 
 }
 
+
 .a {
     text-decoration: none;
 }
@@ -95,14 +96,22 @@
 
 #You-are-here {
     position: absolute;
-    color: rgb(107, 105, 105);
+    color: white;
     font-size: 65px;
-    left: 50rem;
-    top: 10rem;
+    left: 48rem;
+    top: 9rem;
+    /* border: white solid;
+    background-color: rgb(241, 123, 141);
+    border-radius: 10px;
+    opacity: 0.5; */
+    width: 36rem;
+    padding-left: 1.5%;
+    text-align: center;
 }
 
 .div-style {
     width: 100%;
+    
 
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
@@ -132,6 +141,7 @@
     width: 40%;
     height: 150px;
     margin-left: 29%;
+    margin-top: 7%;
 }
 
 .style-english-quizz {
