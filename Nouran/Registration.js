@@ -1,5 +1,4 @@
 var i = 0;
-
 function signup() {
     var flag = true;
     localStorage.setItem("i", i);
