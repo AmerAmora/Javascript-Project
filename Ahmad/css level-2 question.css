@@ -145,20 +145,12 @@ body {
 
 
 /*guide Section*/
-
-
-
-
-
-
-
-
 #guide,
 #quiz {
     height: auto;
     width: 580px;
     padding: 20px;
-    background: #e7f1fa;
+    background:  #BBD8DE;
     border-radius: 30px 10px;
     border: 1px solid #b0c4d8;
     /* display: none; */
@@ -166,7 +158,7 @@ body {
 
 #guide h2 {
     font-size: 60px;
-    color: #ff5235;
+    color: black;
 }
 
 #guide h4 {
@@ -190,8 +182,9 @@ body {
     margin: 10px 25px;
     border: none;
     outline: none;
-    color: #e7f1fa;
-    background: #ff5235;
+    color: black;
+    background: #F0F0F0
+    ;
     border: 1px solid #b0c4d8;
     border-radius: 20px 5px;
     font-size: 18px;
@@ -203,5 +196,56 @@ body {
 }
 
 #guide #button button:hover {
-    background: #e91e3a;
+    background: #92bcc4;
+}
+
+@media only screen and (min-device-width: 0) and (max-device-width: 480px){
+    .question-container {
+      
+        width: 80vw;
+        height: 16vh;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: #BBD8DE;
+       
+      
+    }
+
+    .option{
+        font-size: 14px;
+        width: 60vw;
+    }
+    .option-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width: 780px){
+
+    .question-container {
+     
+        width: 80vw;
+        height: 16vh;
+        font-size: 22px;
+    
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       
+       
+        
+    }
+
+    .option{
+        font-size: 18px;
+    }
+
+
 }
