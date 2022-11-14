@@ -150,10 +150,10 @@ var i=0;
 
 // Show selection for op1
 op1.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightgreen";
-    op2.style.backgroundColor = "red";
-    op3.style.backgroundColor = "red";
-    op4.style.backgroundColor = "red";
+    op1.style.backgroundColor = "#BBD8DE";
+    op2.style.backgroundColor = "#F0F0F0";
+    op3.style.backgroundColor = "#F0F0F0";
+    op4.style.backgroundColor = "#F0F0F0";
     selected = op1.value;
     text1=Questions[id].a[0].text;
 
@@ -161,10 +161,10 @@ op1.addEventListener("click", () => {
 
 // Show selection for op2
 op2.addEventListener("click", () => {
-    op1.style.backgroundColor = "red";
-    op2.style.backgroundColor = "lightgreen";
-    op3.style.backgroundColor = "red";
-    op4.style.backgroundColor = "red";
+    op1.style.backgroundColor = "#F0F0F0";
+    op2.style.backgroundColor = "#BBD8DE";
+    op3.style.backgroundColor = "#F0F0F0";
+    op4.style.backgroundColor = "#F0F0F0";
     selected = op2.value;
     text1=Questions[id].a[1].text;
     
@@ -173,20 +173,20 @@ op2.addEventListener("click", () => {
 
 // Show selection for op3
 op3.addEventListener("click", () => {
-    op1.style.backgroundColor = "red";
-    op2.style.backgroundColor = "red";
-    op3.style.backgroundColor = "lightgreen";
-    op4.style.backgroundColor = "red";
+    op1.style.backgroundColor = "#F0F0F0";
+    op2.style.backgroundColor = "#F0F0F0";
+    op3.style.backgroundColor = "#BBD8DE";
+    op4.style.backgroundColor = "#F0F0F0";
     selected = op3.value;
     text1=Questions[id].a[2].text;
 })
 
 // Show selection for op4
 op4.addEventListener("click", () => {
-    op1.style.backgroundColor = "red";
-    op2.style.backgroundColor = "red";
-    op3.style.backgroundColor = "red";
-    op4.style.backgroundColor = "lightgreen";
+    op1.style.backgroundColor = "#F0F0F0";
+    op2.style.backgroundColor = "#F0F0F0";
+    op3.style.backgroundColor = "#F0F0F0";
+    op4.style.backgroundColor = "#BBD8DE";
     selected = op4.value;
     text1=Questions[id].a[3].text;
 })
@@ -233,6 +233,14 @@ if (id <10) {
     
     
 }
+
+// AAAAAAA 
+ op1.style.backgroundColor = "#F0F0F0";
+ op2.style.backgroundColor = "#F0F0F0"; 
+ op3.style.backgroundColor = "#F0F0F0"; 
+ op4.style.backgroundColor = "#F0F0F0";
+
+
 localStorage.setItem("ImitateCounter",ImitateCounter);
 localStorage.setItem("result",result);
 });
