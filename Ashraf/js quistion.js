@@ -1,5 +1,3 @@
-localStorage.clear();
-
 
 var text1;
 var selected;

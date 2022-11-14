@@ -6,7 +6,7 @@ if(result<50)
      document.getElementsByClassName("mainContainer")[0].style.backgroundColor = "#FC7676";
      document.getElementsByClassName("mainText")[0].innerHTML="Better Luck Next Time!";
      document.getElementsByClassName("secondaryText")[0].innerHTML="Unfortunately you weren't lucky this time";
-     document.getElementsByClassName("mainImage")[0].src="Media/Failed.png";
+     document.getElementsByClassName("mainImage")[0].src="fail.png";
      document.getElementsByClassName("endMain")[0].innerHTML="Better luck next time !"
 document.getElementsByClassName("endSecondary")[0].innerHTML="You Might wanna :"
     

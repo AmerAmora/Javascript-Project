@@ -2,6 +2,20 @@ html,body{
     padding: 0;
     margin: 0;
 }
+
+.navbar-collapse {
+    
+  flex-grow: 0;
+}
+
+.navtext {
+color: black;
+font-size: 1.5rem;
+text-decoration: none;
+margin-left: 30px;
+margin-right: 20px;
+
+}
 .mainContainer
 { padding-top: 70px;
      display: flex;
@@ -13,18 +27,18 @@ html,body{
 }
 .mainText
 { font-family: Caveat;
-    font-size: 70px;
+    font-size: 100px;
 }
 .secondaryText
 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 .resultContainer
 {   
     display: flex;
-    background-color: #6DA6A1;
+    background-color: white;
     flex-direction: column;
 align-items: center;
 justify-content: start;
@@ -35,11 +49,13 @@ height: 200px;
 }
 .resultMainText
 { font-size: 40px;
+  font-weight: bold;
     
 }
 .resultsecondaryText
 {
     font-size: 30px;
+    font-weight: bold;
 }
 .answersContainer
 {
@@ -54,19 +70,25 @@ height: 200px;
 }
 .cardText
 {
-    margin-top:70px
+    margin-top:70px;
+    font-size: 20px;
+    color: white;
+    
 }
 .cardTtitle
 {
-    font-size: 29px;
+    font-size: 35px;
+    font-weight: bold;
     margin-top:100px ;
+    color: white;
 }
 .progress-container
 {   display: grid;
     place-items: center;
     border-bottom: 4px solid white;
-    background-color: #6DA6A1;
+    background-color: white;
     padding-bottom: 50px;
+    margin-top: 10rem;
 }
 
 
@@ -81,7 +103,7 @@ height: 200px;
 .progress .progress-title{
   width: 25%;
   height: 100%;
-  background: #fff;
+  background: rgb(235, 229, 229);
   border-radius: 100px 0 0 100px;
   float: left;
   margin: 0;
@@ -95,7 +117,7 @@ height: 200px;
 }
 .progress .progress-title:after{
   content: "";
-  border-left: 10px solid #fff;
+  border-left: 10px solid rgb(235, 229, 229);
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   position: absolute;
@@ -105,7 +127,7 @@ height: 200px;
 }
 .progress .progress-bar{
   width: 80%;
-  background: #fff;
+  background: rgb(235, 229, 229);
   box-shadow: none;
   position: relative;
 }
@@ -127,13 +149,14 @@ height: 200px;
   .end-container
   {
     display: flex;
-    background-color:#6DA6A1;
+    background-color:#01AB87;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 4px solid white;
+    /* border-bottom: 4px solid white; */
     gap: 20px;
     padding: 30px;
+    margin-top: 3rem;
 
   }
   .endMain{
@@ -153,8 +176,8 @@ height: 200px;
     font-size: 27px;
     font-family: 'Times New Roman', Times, serif;
   }
-a{text-decoration: none; color: black;}
-.links{border: 2px solid black; padding: 10px; padding-right: 20px;}
+a{text-decoration: none; color: black; padding-left: 10px;}
+.links{ padding: 10px; padding-right: 20px; border-radius: 10px; background-color: white;}
 @media screen and (min-device-width: 0px) and (max-device-width : 480px){
     .mainImage
     {
@@ -188,4 +211,5 @@ a{text-decoration: none; color: black;}
     }
 }
 
+*{font-family: Arial;}
 

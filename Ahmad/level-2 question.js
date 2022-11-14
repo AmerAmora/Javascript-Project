@@ -201,7 +201,7 @@ next.addEventListener("click", () => {
 let FinishBtn = document.querySelector("#finish");
 let Level3 = document.querySelector("#level3");
 finish.addEventListener("click", () => {
-    if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
+    if (selected == "true") { result = result + 6; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
 
     localStorage.setItem("ImitateCounter", ImitateCounter);
     localStorage.setItem("result", result);
