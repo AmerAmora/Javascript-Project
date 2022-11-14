@@ -2,7 +2,7 @@ var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
 var adaptCounter = 0;
-localStorage.clear();
+
 // Questions will be asked
 const Questions = [
 
@@ -206,6 +206,7 @@ finish.addEventListener("click", () => {
 
     localStorage.setItem("adaptCounter", adaptCounter);
     localStorage.setItem("result", result);
+    localStorage.setItem("Answer" + (id+5), text1);
     // location.href="../Batool/project3.html"
     FinishBtn.style.display = "none";
     Level3.style.display = "block";

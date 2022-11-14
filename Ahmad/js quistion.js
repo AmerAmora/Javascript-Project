@@ -4,6 +4,7 @@ var text1;
 var selected;
 var result = 0;
 var ImitateCounter = 0;
+localStorage.clear();
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -174,7 +175,7 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id, text1);
+        
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
         console.log(selected);
@@ -191,6 +192,7 @@ op4.style.backgroundColor = "#F0F0F0";
         id++;
         iterate(id);
     }
+    localStorage.setItem("Answer" + id, text1);
     localStorage.setItem("ImitateCounter", ImitateCounter);
     localStorage.setItem("result", result);
 })
@@ -198,7 +200,7 @@ let FinishBtn = document.querySelector("#finish");
 let Level2 = document.querySelector("#level2"); 
 finish.addEventListener("click", () => {
     if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
-
+    localStorage.setItem("Answer" + id, text1);
     localStorage.setItem("ImitateCounter", ImitateCounter);
     localStorage.setItem("result", result);
     // location.href="../Batool/project3.html"

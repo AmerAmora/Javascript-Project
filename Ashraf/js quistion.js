@@ -3,7 +3,6 @@ var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
 var trasnposeCounter = 0;
-
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -254,7 +253,7 @@ finish.addEventListener("click", () => {
     localStorage.setItem("result", result);
     console.log(localStorage.getItem("loggeduser"));
     var loggeduser = localStorage.getItem("loggeduser");
-
+    localStorage.setItem("Answer" + (id+10), text1);
     localStorage.setItem("result" + loggeduser, result);
     location.href = "../Result.html"
 });
