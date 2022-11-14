@@ -1,3 +1,5 @@
+
+
 var text1;
 var selected;
 var result = 0;
@@ -162,6 +164,7 @@ var arr;
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
 const finish = document.getElementById("finish");
+const level2 = document.getElementById("#level2")
 var id = 0;
 
 next.addEventListener("click", () => {
@@ -171,7 +174,7 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id, text1);
+        
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
         console.log(selected);
@@ -182,20 +185,29 @@ op2.style.backgroundColor = "#F0F0F0";
 op3.style.backgroundColor = "#F0F0F0";
 op4.style.backgroundColor = "#F0F0F0";
 
-
+localStorage.setItem("Answer" + id, text1);
+    localStorage.setItem("ImitateCounter", ImitateCounter);
+    localStorage.setItem("result", result);
 
         selected = "";
         id++;
         iterate(id);
     }
-    localStorage.setItem("ImitateCounter", ImitateCounter);
-    localStorage.setItem("result", result);
+    
 })
+let FinishBtn = document.querySelector("#finish");
+let Level2 = document.querySelector("#level2"); 
 finish.addEventListener("click", () => {
     if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
-
+    localStorage.setItem("Answer" + id, text1);
     localStorage.setItem("ImitateCounter", ImitateCounter);
     localStorage.setItem("result", result);
+    // location.href="../Batool/project3.html"
+    FinishBtn.style.display = "none";
+    Level2.style.display = "block";
+    panel.style.display = "none"
+
+    
 
 })
 
@@ -213,3 +225,18 @@ continueBtn.addEventListener("click", () => {
     panel.style.display = "block";
     guide.style.display = "none";
 })
+Level2.addEventListener("click", () => {
+   location.href="./level-2 question.html" ;
+})
+
+// ===============
+//guide Section
+// let guide = document.querySelector("#guide");
+
+// let FinishBtn = document.querySelector("#finish");
+// // let panel = document.querySelector(".panel");
+// //what happen when 'Finish' Button Will Click
+// FinishBtn.addEventListener("click", () => {
+//     panel.style.display = "none";    
+//     guide.style.display = "none";
+// })

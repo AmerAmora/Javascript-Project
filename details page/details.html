@@ -12,25 +12,20 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #BBD8DE;" >
+    <nav class="navbar navbar-expand-lg" style="background-color: white; border: #BBD8DE solid;" >
         <div class="container-fluid">
-          <a class="navtext" class="navbar-brand text-white" href="#">Navbar</a>
+          <a class="navtext" class="navbar-brand " href="#" style="font-family: monospace;  ">Englestia</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent1">
             <ul id="navUl" class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="navtext" class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="navtext" class="nav-link active" aria-current="page" href="/Batool/project3.html">Home</a>
               </li>
+
               <li class="nav-item">
-                <a class="navtext" class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="navtext" class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="navtext" class="nav-link" href="#">Link</a>
+                <a class="navtext" class="nav-link" href="#" onclick="logout()">Log out</a>
               </li>
 
 
@@ -333,13 +328,26 @@
 
         </div>
     </div>
-    <div  style="width: 100%; height: 100px;  ; margin-top: 21px; background-color: #F4F3F3;">
-        <i class="fa-brands fa-linkedin linked-in-footer" style="color: #729557; font-size: 30px; margin-top:25px ; margin-left: 50px"></i>
-        <i class="fa-solid fa-envelope email-footer" style="color: #729557; font-size: 30px; margin-top:25px ;"></i>
-        <i class="fa-brands fa-facebook facebook-footer" style="color: #729557; font-size: 30px; margin-top:25px ; ;"  ></i>
-        <h3 style="float: right; margin-right: 70px; margin-top:25px ;font-size: xx-large;color: #729557;" >LOGO</h3>
-
+    <div class="footer" id="footer">
+        <div class="foot">
+        <div class="left">
+            <ul  type="none">
+                <li><i class="fa-brands fa-facebook"><a href="https://www.facebook.com/" target="_blank"> FACEBOOK </a></i></li>
+                <li><i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/" target="blank"> LINKEDIN</a></i></li>
+                <li><i class="fa-sharp fa-solid fa-envelope"><a href="https://mail.google.com/mail/u/0/?pli=1#inbox" traget="blank">GMAIL</a></i></li>
+            </ul>
+        </div>
+            <div class="right">
+                <ul type="none">
+                    <li><i class="fa-solid fa-copyright"> Copyright</i></li>
+                    <li><i class="fa-solid fa-phone"> Telephone</i></li>
+                </ul>
+            </div>
+        </div>
+        </div>
     </div>
+    </div>
+
 
     <script src="details.js"></script>
 </body>
