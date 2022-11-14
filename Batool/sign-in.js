@@ -21,8 +21,6 @@ function signin() {
                 break;
             }
         }
-
-
     }
     if (check == false) { alert("Wrong username or pw"); }
 
