@@ -1,4 +1,7 @@
  let result = localStorage.getItem("result");
+ var loggeduser = localStorage.getItem("loggeduser");
+
+ let imitateCounter=localStorage.getItem("ImitateCounter"+loggeduser);
 
 
 if(result<50)
