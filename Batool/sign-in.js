@@ -22,7 +22,8 @@ function signin() {
             }
         }
     }
-    if (check == false) { alert("Wrong username or pw"); }
+    if (check == false) { alert("Wrong username or pw");
+    }
 
 }
 // function getyourname()
