@@ -178,7 +178,7 @@ next.addEventListener("click", () => {
             document.getElementById("finish").style.display = "block";
             document.getElementById("next").style.display = "none";
         }
-        localStorage.setItem("Answer" + id, text1);
+        localStorage.setItem("Answer" + id+5, text1);
         //  console.log(localStorage.getItem("Answer"+id));
         if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
         console.log(selected);
@@ -201,7 +201,7 @@ next.addEventListener("click", () => {
 let FinishBtn = document.querySelector("#finish");
 let Level3 = document.querySelector("#level3");
 finish.addEventListener("click", () => {
-    if (selected == "true") { result = result + 4; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
+    if (selected == "true") { result = result + 6; ImitateCounter = ImitateCounter + 1; } console.log(result); console.log(ImitateCounter);
 
     localStorage.setItem("ImitateCounter", ImitateCounter);
     localStorage.setItem("result", result);

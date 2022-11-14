@@ -9,6 +9,21 @@
     margin-left: 150%;
 }
 
+.white-space-over-star {
+    background-color: #F4F3F3;
+    margin-top: -4%;
+    padding-top: 8px;
+    height: 500px;
+}
+
+.sign-in-style {
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 12px;
+    margin-left: 40%;
+    color: #6DA6A1;
+}
+
 .navtext {
     color:white;
     font-size: 1.5rem;
@@ -113,7 +128,7 @@
 
 .div-style {
     width: 100%;
-    
+
 
     /* margin-left: 10%; */
     /* border: 3px solid grey; */
@@ -187,17 +202,19 @@
     font-weight: bold;
     margin-left: -20%;
 }
-.opinion-all{
+
+.opinion-all {
     display: flex;
     flex-direction: row;
     border: 2px solid red;
     height: 500px;
 }
+
 #opinion1 {
     width: 30%;
     height: 350px;
     background-color: #BBD8DE;
-   
+
     margin-left: 10%;
     margin-top: -12%;
     background-image: url(images/hijabi.jpg);
@@ -214,7 +231,7 @@
 
     display: none;
     color: white;
-    
+
 
 }
 
@@ -230,7 +247,7 @@
     width: 30%;
     height: 350px;
     background-color: #BBD8DE;
- 
+
     margin-left: 60%;
     margin-top: -57%;
     background-image: url(images/hijabi.jpg);
@@ -247,14 +264,15 @@
 
     display: none;
     color: white;
-    
+
 
 }
 
 #opinion2:hover {
-    background-image:url();
+    background-image: url();
 }
-#opinion2:hover>#h1-opinion2{
+
+#opinion2:hover>#h1-opinion2 {
     display: inline-block;
 }
 
@@ -348,9 +366,44 @@
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
+    .sign-in-style {
+        border: 2px solid white;
+        border-radius: 12px;
+        padding: 12px;
+        margin-left: 20%;
+        color: #6DA6A1;
+    }
+
+    .white-space-over-star {
+        background-color: #F4F3F3;
+        margin-top: -35%;
+        padding-top: 8px;
+        height: 500px;
+    }
+
+    #You-are-here {
+        position: absolute;
+        color: white;
+        font-size: 5px;
+        left: 2rem;
+
+        top: 1rem;
+        /* border: white solid;
+        background-color: rgb(241, 123, 141);
+        border-radius: 10px;
+        opacity: 0.5; */
+        width: 10rem;
+        padding-left: 0%;
+        text-align: center;
+        margin-top: -30%;
+        margin-right: -20%;
+    }
+
+
+
     #You-are-here-con {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         position: relative;
         background-image: url(images/hijabi.jpg);
         background-size: contain;
@@ -412,7 +465,7 @@
 
     .div-opinion-trainee {
         width: 70%;
-        height: 400px;
+        height: 100px;
         border: 5px solid #6DA6A1;
         border-radius: 20px;
         float: right;
@@ -432,7 +485,7 @@
 
 
     .div-style-know-us {
-        height: 1935px;
+        height: 335px;
         background-color: #6DA6A1;
         width: 100%;
         margin-left: 0%;
@@ -476,9 +529,39 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
 
+    .sign-in-style {
+
+        border-radius: 12px;
+        padding: 12px;
+        margin-left: 35%;
+
+    }
+
+    .white-space-over-star {
+        background-color: #F4F3F3;
+        margin-top: -8%;
+        padding-top: 8px;
+        height: 500px;
+    }
+
     #You-are-here {
         position: absolute;
-        color: rgb(107, 105, 105);
+
+        font-size: 65px;
+        left: 1rem;
+        top: 9rem;
+        /* border: white solid;
+        background-color: rgb(241, 123, 141);
+        border-radius: 10px;
+        opacity: 0.5; */
+        width: 20rem;
+
+        text-align: center;
+    }
+
+    #You-are-here {
+        position: absolute;
+
         font-size: 36px;
         left: 27rem;
         top: 10rem;
@@ -522,13 +605,13 @@
 
 
     .div-opinion-trainee {
-        width: 70%;
-        height: 400px;
-        border: 5px solid #6DA6A1;
+        width: 100%;
+        height: 50px;
+
         border-radius: 20px;
         float: right;
         margin-top: 40px;
-        background-color: #F4F3F3;
+
 
 
     }
@@ -543,8 +626,8 @@
 
 
     .div-style-know-us {
-        height: 1920px;
-        background-color: #6DA6A1;
+        height: 320px;
+
         width: 100%;
         margin-left: 0%;
         /* border: 3px solid grey; */
@@ -582,18 +665,18 @@
         font-size: xxx-large;
         margin-left: 10px;
         margin-top: 15px;
-        color: #6DA6A1;
+
     }
 
     .email-footer {
         font-size: xxx-large;
         margin-left: 15px;
-        color: #6DA6A1;
+
     }
 
     .facebook-footer {
         font-size: xxx-large;
         margin-left: 15px;
-        color: #6DA6A1;
+
     }
 }
