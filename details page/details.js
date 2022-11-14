@@ -1,5 +1,5 @@
 
-var arr=["scientifically","Before","I was at the museum with Nouran.","done","down","wore","We're wearing suits.",
+var arr=["scientifically","Before","I was at the museum with Nouran.","done","I am going to my mother's house.","down","wore","We're wearing suits.",
 "into","get along","got back","blew","were able to knock","nor","were given / would pick","so / that","Every time / how",
 "why","originated / began","had been lying / was spotted",]
 

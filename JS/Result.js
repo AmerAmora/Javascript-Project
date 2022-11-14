@@ -31,3 +31,13 @@ document.getElementById("adaptLevel").innerHTML=adaptCounter+"/5"
 document.getElementById("adaptLevel").style.width=adaptCounter/5*100+"%" ;
 document.getElementById("imitateLevel").innerHTML=imitateCounter+"/5"
 document.getElementById("imitateLevel").style.width=imitateCounter/5*100+"%" ;
+
+
+
+function logout() {
+
+     location.href = "../Batool/project3.html";
+ 
+     sessionStorage.clear();
+ 
+ }
