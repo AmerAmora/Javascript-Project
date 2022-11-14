@@ -175,12 +175,17 @@
     font-weight: bold;
     margin-left: -20%;
 }
-
+.opinion-all{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    height: 500px;
+}
 #opinion1 {
     width: 30%;
     height: 350px;
     background-color: #BBD8DE;
-    display: inline-block;
+   
     margin-left: 10%;
     margin-top: -12%;
     background-image: url(images/hijabi.jpg);
@@ -213,7 +218,7 @@
     width: 30%;
     height: 350px;
     background-color: #BBD8DE;
-    display: inline-block;
+ 
     margin-left: 60%;
     margin-top: -57%;
     background-image: url(images/hijabi.jpg);
