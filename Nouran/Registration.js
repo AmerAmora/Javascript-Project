@@ -10,7 +10,7 @@ function signup() {
     var x = 0;
     for (x = 0; x < 10; x++) {
         if (firstname == localStorage.getItem("firstname" + x)) {
-            alert("You are aleady exit");
+            alert("username is already taken");
             flag = false;
             break;
 
@@ -42,6 +42,7 @@ function signup() {
 
 
         i++;
+        location.href="../Batool/project3.html"
     }
 }
 // localStorage.clear();
