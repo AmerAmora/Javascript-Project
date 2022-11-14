@@ -6,6 +6,7 @@ box-sizing: border-box;
 .container{
 width:90%;
 margin:0px auto;
+/* height:100px; */
 }
 img{
 width:100%;
@@ -31,6 +32,8 @@ border:  black solid 50px;
 border:3px solid white;
 border-radius: 20px;
 opacity: 80%;
+font-size: 25px;
+font-weight: bolder;
 }
 .start{
 text-decoration: none;
@@ -40,19 +43,13 @@ padding: 7px;
 border-radius: 10px;
 width: 50%;
 text-align: center;
-background-color: #BBD8DE;;
+background-color: #BBD8DE;
+font-weight: normal;
 }
 a{
 text-decoration: none;
 color: white;   
 }
-.startquiz:hover{
-/* transform: scale(105%);  */
- 
-}
-
-/*  */
-
 /* Description */
 .Description .container .text2{
 border: 4px #BBD8DE solid;
@@ -144,6 +141,40 @@ align-items: center;
 text-align: center;
 margin-bottom: 20px;
 }
+/* Footer */
+.footer{
+background-color: #BBD8DE;
+color:black;
+font-size: 17px;
+}
+.foot{
+display: flex;
+justify-content: space-between;
+width:90%;
+
+}
+.footer i:hover{
+background-color:#BBD8DE;
+border-radius: 5px;
+color: black;
+transition: 2px;
+}
+.footer ul{
+display: flex;
+gap: 10px;
+margin-top: 50px;
+}
+.footer ul .li{
+display: flex;
+}
+.footer i{
+    margin-left: 50px;
+    transition: 0.6s;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
 /*  */
 @media (max-width:768px){
 .quiz .box{
@@ -192,10 +223,69 @@ margin-top: 0px;
 } 
 .quizez .container .quiz{
 flex-direction: column;
-width: 100%;
+width:100%;
 gap: 30px;
-}  
+font-size: 10px;
+margin-right: 20px;
 }
+.container .footertContant{
+flex-direction: column;
+}
+
+.Test .container  {
+    width: 95%;
+}
+.main{
+background-image: url("religious-satisfied-female-model-has-arms-folded-looks-aside-has-pleased-expression-wears-pink-scarf-head-white-shirt-being-deep-thoughts-stands-blue-wall-copy-space-text.jpg");
+height: 33vh;
+background-repeat:no-repeat ;
+background-size: contain;
+position: relative;}
+.text{
+position: absolute;
+left:57%;
+top:1.5%;
+width:40%;
+background-color: white;
+padding: 10px;
+border:  black solid 50px;
+border:3px solid white;
+border-radius: 20px;
+opacity: 80%;
+font-size: 8px;
+font-weight: bolder;
+}
+.start{
+text-decoration: none;
+font-size: 10px;
+color: black;
+padding: 7px;
+border-radius: 10px;
+width: 50%;
+text-align: center;
+background-color: #BBD8DE;
+font-weight: normal;
+}
+a{
+text-decoration: none;
+color: white;   
+}
+
+.footer ul{
+flex-direction: column;
+margin-top: 10px;
+}
+.footer li{
+font-size: 7px;
+}
+.footer i{
+margin-left: 20px;
+font-size: 10px;
+width: 100%;
+margin-top: 10px;
+}
+}
+/*  */
 @media (min-width:481px) and (max-width:768px){
 .main .container .both img{
 width:100%;
@@ -212,37 +302,42 @@ flex-direction: column;
 width: 100%;
 gap: 30px;
 }
+.main .text{
+
+font-size: 12px;
+bottom: 20%;
+padding: normal;
+height: 300px;
+left:64%;
+top:20%;
+width: 35%;
+text-align: center;
+
 }
-.footertContant{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 50%;
-    color: black;
+.start{
+text-decoration: none;
+font-size:12px;
+color: black;
+padding: 7px;
+border-radius: 10px;
+width: 50%;
+text-align: center;
+background-color: #BBD8DE;;
+}
+a{
+text-decoration: none;
+color: white;   
+}
+.footer i{
+margin-left: 31px;
+font-size: 12px;
+margin-bottom: 20px;
+}
+.Test .container{
+    width: 70%;
+}
 }
 
-footer{
-    height: ;
-    background-color:#BBD8DE;
-    /* position: fixed; */
-    bottom: 0 ;
-    right: 0;
-    padding:20px 0px ;
-    box-sizing: content-box;
-}
-footer .container .contact li :hover{
-    background-color: #BBD8DE;
-    font-size: 10px;   
-}
-footer .container .socialMedia li :hover{
-    background-color: #BBD8DE;
-    font-size: 30px;   
-}
-@media (max-width:480px) {
-    .container .footertContant{
-        flex-direction: column;
-       }
-}
+
 
 
