@@ -4,7 +4,6 @@ var text1;
 var selected;
 var result = 0;
 var ImitateCounter = 0;
-localStorage.clear();
 // Questions will be asked
 const Questions = [{
     id: 0,

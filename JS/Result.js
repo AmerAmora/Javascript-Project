@@ -1,7 +1,12 @@
  let result = localStorage.getItem("result");
  var loggeduser = localStorage.getItem("loggeduser");
+ let imitateCounter=Number(localStorage.getItem("ImitateCounter"+loggeduser));
+ let adaptCounter=Number(localStorage.getItem("adaptCounter"+loggeduser));
+ let trasnposeCounter=Number(localStorage.getItem("trasnposeCounter"+loggeduser));
+var totalcorrect=imitateCounter+adaptCounter+trasnposeCounter;
+var totalwrong=20-totalcorrect;
 
- let imitateCounter=localStorage.getItem("ImitateCounter"+loggeduser);
+ 
 
 
 if(result<50)
@@ -20,9 +25,19 @@ if(result<50)
 document.getElementsByClassName("resultsecondaryText")[0].innerHTML=result+"/100";
 document.getElementById("correctanswers").innerHTML="You Answered " + totalcorrect +" out of 20 Questions correctly";
 document.getElementById("wronganswers").innerHTML="You Answered " + totalwrong +" out of 20 Questions incorrectly";
-document.getElementById("transposeLevel").innerHTML="10/10";
-document.getElementById("transposeLevel").style.width=10/10*100+"%" ;
-document.getElementById("adaptLevel").innerHTML="3/5"
-document.getElementById("adaptLevel").style.width=3/5*100+"%" ;
-document.getElementById("imitateLevel").innerHTML="3/5"
-document.getElementById("imitateLevel").style.width=3/5*100+"%" ;
+document.getElementById("transposeLevel").innerHTML=trasnposeCounter+"/10";
+document.getElementById("transposeLevel").style.width=trasnposeCounter/10*100+"%" ;
+document.getElementById("adaptLevel").innerHTML=adaptCounter+"/5"
+document.getElementById("adaptLevel").style.width=adaptCounter/5*100+"%" ;
+document.getElementById("imitateLevel").innerHTML=imitateCounter+"/5"
+document.getElementById("imitateLevel").style.width=imitateCounter/5*100+"%" ;
+
+
+
+function logout() {
+
+     location.href = "../Batool/project3.html";
+ 
+     sessionStorage.clear();
+ 
+ }
