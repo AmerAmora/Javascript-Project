@@ -1,112 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/Result.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat">
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/Result.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat">
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              Navbar text with an inline element
-            </span>
-          </div>
-        </div>
-      </nav>
-    
-
-     
-      <div class="mainContainer">
-           <div> <p class="mainText">Congratulations !</p></div>
-           <div> <p class="secondaryText">You Just Passed all of our quizzes ! </p></div>
-           <div> <img src="Media/Congrats.png" class="mainImage" alt="graduation Image"></div>
-      </div>
-    <div class="resultContainer">
-        <div> <p class="resultMainText">Your result is : </p></div>
-        <div> <p class="resultsecondaryText">90/100 </p></div>
-    </div>
-    <div class="answersContainer">
-      <div class="card " style="background-color:#01AB87  ; text-align: center; ">
-        <img src="Media/true.png" class="card-img" alt="..."style="opacity: 0.3;" >
-        <div class="card-img-overlay">
-          <p class="cardTtitle">Your correct Answers</p>
-          <p class="cardText" id="correctanswers">You Answered 18 out of 20 Questions correctly</p>
-         
-        </div>
-      </div>
-      <div class="card" style="background-color:#FC7676 ; height: 470px; text-align: center;">
-        <img src="Media/False.png" class="card-img" alt="..." style="opacity: 0.3;">
-        <div class="card-img-overlay">
-          <p class="cardTtitle">Your Wrong Answers</p>
-          <p class="cardText" id="wronganswers">You Answered 2 out of 20 Questions incorrectly</p>
-          
-        </div>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar w/ text</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
       </div>
     </div>
-    <div class="progress-container">
+  </nav>
 
 
-      
-            <div class="col-md-6">
-                <div class="progress red">
-                    <h3 class="progress-title">Imitate Level</h3>
-                    <div class="progress-bar">
-                        <div class="progress-value" id="imitateLevel">80%</div>
-                    </div>
-                </div>
-     
-                <div class="progress red">
-                    <h3 class="progress-title">Adapt Level</h3>
-                    <div class="progress-bar">
-                        <div class="progress-value" id="adaptLevel"></div>
-                    </div>
-                </div>
-                <div class="progress red">
-                  <h3 class="progress-title" >Transpose Level</h3>
-                  <div class="progress-bar">
-                      <div class="progress-value" id="transposeLevel"></div>
-                  </div>
-              </div>
 
-            </div>
-            
-            
+  <div class="mainContainer">
+    <div>
+      <p class="mainText">Congratulations !</p>
+    </div>
+    <div>
+      <p class="secondaryText">You Just Passed all of our quizzes ! </p>
+    </div>
+    <div> <img src="Media/Congrats.png" class="mainImage" alt="graduation Image"></div>
+  </div>
+  <div class="resultContainer">
+    <div>
+      <p class="resultMainText">Your result is : </p>
+    </div>
+    <div>
+      <p class="resultsecondaryText">90/100 </p>
+    </div>
+  </div>
+  <div class="answersContainer">
+    <div class="card " style="background-color:#01AB87  ; text-align: center; ">
+      <img src="Media/true.png" class="card-img" alt="..." style="opacity: 0.3;">
+      <div class="card-img-overlay">
+        <p class="cardTtitle">Your correct Answers</p>
+        <p class="cardText" id="correctanswers">You Answered 18 out of 20 Questions correctly</p>
+
+      </div>
+    </div>
+    <div class="card" style="background-color:#FC7676 ; height: 470px; text-align: center;">
+      <img src="Media/False.png" class="card-img" alt="..." style="opacity: 0.3;">
+      <div class="card-img-overlay">
+        <p class="cardTtitle">Your Wrong Answers</p>
+        <p class="cardText" id="wronganswers">You Answered 2 out of 20 Questions incorrectly</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="progress-container">
+
+
+
+    <div class="col-md-6">
+      <div class="progress red">
+        <h3 class="progress-title">Imitate Level</h3>
+        <div class="progress-bar">
+          <div class="progress-value" id="imitateLevel">80%</div>
         </div>
-   
-    <div class="end-container">
-      <div>
-       <p class="endMain">We will get in touch with you soon</p>
       </div>
-      <div>
-       <p class="endSecondary">In the meantime</p>
-      </div>
-      <Div class="links-container"> 
-        <div class="links">
-          <a href="#">Check Your Answers</a></div> 
-          <div class="links"> <a href="#">Visit Home Page</a></div></Div>
 
-<script src="JS/Result.js"></script>
+      <div class="progress red">
+        <h3 class="progress-title">Adapt Level</h3>
+        <div class="progress-bar">
+          <div class="progress-value" id="adaptLevel"></div>
+        </div>
+      </div>
+      <div class="progress red">
+        <h3 class="progress-title">Transpose Level</h3>
+        <div class="progress-bar">
+          <div class="progress-value" id="transposeLevel"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="end-container">
+    <div>
+      <p class="endMain">We will get in touch with you soon</p>
+    </div>
+    <div>
+      <p class="endSecondary">In the meantime</p>
+    </div>
+    <Div class="links-container">
+      <div class="links">
+        <a href="../details page/details.html">Check Your Answers</a>
+      </div>
+      <div class="links"> <a href="../Batool/project3.html">Visit Home Page</a></div>
+    </Div>
+
+    <script src="JS/Result.js"></script>
 </body>
+
 </html>

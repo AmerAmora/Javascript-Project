@@ -3,6 +3,8 @@ var i = 0;
 function signup() {
     var flag = true;
     localStorage.setItem("i", i);
+
+    //take rom input box (sign up)
     var firstname = document.getElementById("firstname").value;
 
 
@@ -21,6 +23,7 @@ function signup() {
 
     }
     if (flag) {
+        //set to local storage
         localStorage.setItem("firstname" + i, firstname);
         // console.log(typeof "result");
         // if (result == 0) {

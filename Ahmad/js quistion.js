@@ -1,3 +1,5 @@
+
+
 var text1;
 var selected;
 var result = 0;

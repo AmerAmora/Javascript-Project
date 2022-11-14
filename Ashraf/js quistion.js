@@ -1,3 +1,6 @@
+localStorage.clear();
+
+
 var text1;
 var selected;
 var result = Number(localStorage.getItem("result"));
