@@ -16,7 +16,7 @@ function signin() {
                 localStorage.setItem("loggeduser", username);
                 sessionStorage.setItem("username", username);
                 check = true;
-                location.href = 'project3.html';
+                location.href = '../Nouran/final.html';
                 console.log(check);
                 break;
             }
@@ -32,7 +32,3 @@ function signin() {
 
 // }
 
-var finish = localStorage.getItem("finish");
-if (finish.lenght > 1) {
-    location.href = "../Ahmads/html quistion.html"
-}
