@@ -132,6 +132,40 @@ ol{
     background-color: white;
 }
 
+.footer{
+    background-color: #BBD8DE;
+    color:black;
+    font-size: 17px;
+    }
+    .foot{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    
+    }
+    .footer i:hover{
+    background-color:#BBD8DE;
+    border-radius: 5px;
+    color: black;
+    transition: 2px;
+    }
+    .footer ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    }
+    .footer ul .li{
+    display: flex;
+    }
+    .footer i{
+        margin-left: 50px;
+        transition: 0.6s;
+    }
+    .footer a{
+        text-decoration: none;
+        color: black;
+    }
+
 
 
 
@@ -181,6 +215,20 @@ ol{
             display: none;
         }
 
+        .footer ul{
+            flex-direction: column;
+            margin-top: 10px;
+            }
+            .footer li{
+            font-size: 7px;
+            }
+            .footer i{
+            margin-left: 20px;
+            font-size: 10px;
+            width: 100%;
+            margin-top: 10px;
+            }
+
 
 
 }
@@ -189,4 +237,10 @@ ol{
     #div2{
         height: 500vh;
     }
+
+    .footer i{
+        margin-left: 31px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        }
 }
