@@ -6,40 +6,40 @@ var ImitateCounter=0;
 const Questions = [{
     id: 0,
     q: "1) Batool______ from Korea last week.",
-    a: [{ text: "A: gets back", isCorrect: false },
-        { text: "B: has gotten back", isCorrect: false },
-        { text: "C: got back", isCorrect: true },
-        { text: "D: gotten back", isCorrect: false }
+    a: [{ text: " gets back", isCorrect: false },
+        { text: " has gotten back", isCorrect: false },
+        { text: " got back", isCorrect: true },
+        { text: " gotten back", isCorrect: false }
     ]
 
 },
 {
     id: 1,
     q: "2) The wind ______ hard all night.",
-    a: [{ text: "A: blow", isCorrect: false },
-        { text: "B: blowing", isCorrect: false },
-        { text: "C: blowed", isCorrect: false },
-        { text: "D: blew", isCorrect: true }
+    a: [{ text: " blow", isCorrect: false },
+        { text: " blowing", isCorrect: false },
+        { text: " blowed", isCorrect: false },
+        { text: " blew", isCorrect: true }
     ]
 
 },
 {
     id: 2,
     q: "3)As the tree was too high to climb, the mischievous boys ------ their ball down only by throwing sticks at it.",
-    a: [{ text: "A: would have knocked", isCorrect: false },
-        { text: "B: will have to knock", isCorrect: false },
-        { text: "C: were able to knock", isCorrect: true },
-        { text: "D: could have knocked", isCorrect: false }
+    a: [{ text: " would have knocked", isCorrect: false },
+        { text: " will have to knock", isCorrect: false },
+        { text: " were able to knock", isCorrect: true },
+        { text: " could have knocked", isCorrect: false }
     ]
 
 },
 {
     id: 3,
     q: "4)She failed to get anyone to repair the taps for her at the weekend,-------- could she do it on her own.",
-    a: [{ text: "A) as", isCorrect: false },
-        { text: "B) only if", isCorrect: false },
-        { text: "C) nor", isCorrect: true },
-        { text: "D) so", isCorrect: false }
+    a: [{ text: " as", isCorrect: false },
+        { text: " only if", isCorrect: false },
+        { text: " nor", isCorrect: true },
+        { text: " so", isCorrect: false }
     ]
 
 },
@@ -47,10 +47,10 @@ const Questions = [{
 {
     id: 4,
     q: "5)If I ----- the choice of making either an oral or a written report, I ------ the second alternative.",
-    a: [{ text: "A) gave / could pick", isCorrect: false },
-        { text: "B) had been given / might pick", isCorrect: false },
-        { text: "C) were given / would pick", isCorrect: true },
-        { text: "D) would have given / had picked", isCorrect: false }
+    a: [{ text: " gave / could pick", isCorrect: false },
+        { text: " had been given / might pick", isCorrect: false },
+        { text: " were given / would pick", isCorrect: true },
+        { text: " would have given / had picked", isCorrect: false }
     ]
 
 },
@@ -58,10 +58,10 @@ const Questions = [{
 {
     id: 5,
     q: "6)You would not expect anyone ----- intelligent to make----- stupid mistake, but he did so.",
-    a: [{ text: "A) too / such", isCorrect: false },
-        { text: "B) too much / those", isCorrect: false },
-        { text: "C) so / that", isCorrect: true },
-        { text: "D) as / as", isCorrect: false }
+    a: [{ text: " too / such", isCorrect: false },
+        { text: " too much / those", isCorrect: false },
+        { text: " so / that", isCorrect: true },
+        { text: " as / as", isCorrect: false }
     ]
 
 },
@@ -69,10 +69,10 @@ const Questions = [{
 {
     id: 6,
     q: "7)----- a celebrity arrives in Istanbul, the first question reporters ask them is ---- they like Istanbul.",
-    a: [{ text: "A) During / whether", isCorrect: false },
-        { text: "B) Until / if", isCorrect: false },
-        { text: "C) Every time / how", isCorrect: true },
-        { text: "D) When / wherever", isCorrect: false }
+    a: [{ text: " During / whether", isCorrect: false },
+        { text: " Until / if", isCorrect: false },
+        { text: " Every time / how", isCorrect: true },
+        { text: " When / wherever", isCorrect: false }
     ]
 
 },
@@ -80,30 +80,30 @@ const Questions = [{
 {
     id: 7,
     q: "8)Despite my insistence, Ashraf didn’t tell me ------ he didn’t like me and my family.",
-    a: [{ text: "A) the reason", isCorrect: false },
-        { text: "B) even if", isCorrect: false },
-        { text: "C) why", isCorrect: true },
-        { text: "D) about whom", isCorrect: false }
+    a: [{ text: " the reason", isCorrect: false },
+        { text: " even if", isCorrect: false },
+        { text: " why", isCorrect: true },
+        { text: " about whom", isCorrect: false }
     ]
 
 },
 {
     id: 8,
     q: "9)Tourists ----- when large numbers of middle-class people ----- to join the more wealthy aristocratic travellers.",
-    a: [{ text: "A) have originated / had begun", isCorrect: false },
-        { text: "B) had originated / began", isCorrect: false },
-        { text: "C) originated / began", isCorrect: true },
-        { text: "D) could have originated / have begun", isCorrect: false }
+    a: [{ text: " have originated / had begun", isCorrect: false },
+        { text: " had originated / began", isCorrect: false },
+        { text: " originated / began", isCorrect: true },
+        { text: " could have originated / have begun", isCorrect: false }
     ]
 
 },
 {
     id: 9,
     q: "10)The wounded hunter------ on the ground for almost an hour when, coincidentally, he ------ by another hunter, who must have keen eyes.",
-    a: [{ text: "A) has been lying / is spotting", isCorrect: false },
-        { text: "B) will have lain / had been spotted", isCorrect: false },
-        { text: "C) had been lying / was spotted", isCorrect: true },
-        { text: "D) was lying / spotted", isCorrect: false }
+    a: [{ text: " has been lying / is spotting", isCorrect: false },
+        { text: " will have lain / had been spotted", isCorrect: false },
+        { text: " had been lying / was spotted", isCorrect: true },
+        { text: " was lying / spotted", isCorrect: false }
     ]
 
 }
