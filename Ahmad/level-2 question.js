@@ -181,7 +181,7 @@ next.addEventListener("click", () => {
         }
         localStorage.setItem("Answer" + (id+5), text1);
         //  console.log(localStorage.getItem("Answer"+id));
-        if (selected == "true") { result = result + 4; adaptCounter = adaptCounter + 1; } console.log(result); console.log(adaptCounter);
+        if (selected == "true") { result = result + 6; adaptCounter = adaptCounter + 1; } console.log(result); console.log(adaptCounter);
         console.log(selected);
         // batool
 
