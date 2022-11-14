@@ -15,22 +15,22 @@ height: 100%;
   /* globle section */
   /* Main */
 
-  .main .welcome{
+.main .welcome{
     background-image: url("test1.jpg");
     width: 100%;
     background-size: cover;
     height: 100vh;
     background-color: black;
-  }
-  
+}
+
 .welcometext .container .box{
-  width:50%;
-  height: 40vh;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: black;
-  box-shadow: 5px 5px 10px  black;
-  margin-left: 300px;
+width:50%;
+height: 40vh;
+border-radius: 10px;
+overflow: hidden;
+background-color: black;
+box-shadow: 5px 5px 10px  black;
+margin-left: 300px;
 }
 /* Description */
 .Description .container .text{
@@ -60,9 +60,9 @@ height: 100%;
     width: 50%;
 }
 .Test .container .test h1{
- text-align: center;
- margin-top: 20px;
- margin-bottom: 20px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 /* Quizez */
 .quizez .container .all{
@@ -228,5 +228,3 @@ width: 100%;
 gap: 30px;
 }
 }
- 
- 
