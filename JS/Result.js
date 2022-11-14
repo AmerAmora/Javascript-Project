@@ -1,6 +1,5 @@
- let result = prompt("enter result",0);
- let totalcorrect=prompt("Enter the total of the correct answers",0);
- let totalwrong=prompt("Enter the total of the wrong answers",0);
+ let result = localStorage.getItem("result");
+
 
 if(result<50)
 {

@@ -41,14 +41,14 @@
                             id="firstname" onchange="getFname()"></div><br>
                     <div class="div"><label>Last Name </label><input Type="text" placeholder="Enter Your Last Name"
                             id="lastname" onchange="getLname()"></div><br>
-                    <div class="div"><label> Your Email </label><input Type="email" placeholder=" Enter Your Email"
+                    <div class="div"><label> Your Email </label><input Type="email" placeholder=" Enter Your Email" onchange=" ValidateEmail(this)"
                             id="email" onchange="getEmail()"></div><br>
                     <div class="div"><label>Your Password </label><input Type="password"
-                            placeholder="Enter Your Password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required onchange="getpassword()"></div><br>
+                            placeholder="Enter Your Password" id="password" required onchange="ValidatePassword(this)"></div><br>
                     <div class="div"><label>Confirm Password </label><input Type="password"
-                            placeholder="Confirm Your Password" id="confirmpassword" onchange="ConfirmPsss() "></div>
+                            placeholder="Confirm Your Password" id="confirmpassword" ></div>
                     <br>
-                    <button class="button" onclick="signup()"><a href="#" class="signup"> Sign Up </a> </button><br><br>
+                    <button class="button" onclick="signup()"><a href="#" class="signup" > Sign Up </a> </button><br><br>
                     <a href="#" class="login"> Already Have An Account?</a>
                 </div>
             </div>
