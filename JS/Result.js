@@ -5,7 +5,7 @@
  let trasnposeCounter=Number(localStorage.getItem("trasnposeCounter"+loggeduser));
 var totalcorrect=imitateCounter+adaptCounter+trasnposeCounter;
 var totalwrong=20-totalcorrect;
-
+if(imitateCounter==0){imitateCounter=0;}
  
 
 
