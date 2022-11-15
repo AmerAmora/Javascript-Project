@@ -10,6 +10,8 @@ function signin() {
             if (localStorage.getItem("result" + username) > 0) {
                 location.href = "../Result.html"; check = true;
                 sessionStorage.setItem("username", username);
+                localStorage.setItem("loggeduser", username);
+
                 break;
             }
             else {

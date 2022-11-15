@@ -159,7 +159,7 @@ function iterate(id) {
 if (start) {
     iterate("0");
 }
-var arr;
+
 
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
