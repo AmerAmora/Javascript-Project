@@ -1,5 +1,5 @@
 var i = 0;
-// localStorage.clear();
+localStorage.clear();
 function signup() {
     var flag = true;
     localStorage.setItem("i", i);

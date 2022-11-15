@@ -1,7 +1,11 @@
 /* movement in css (effect) */
+
+
 .fa-facebook:before {
-    content:none;
+    content: none;
+    display: none;
 }
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -27,7 +31,7 @@
 }
 
 .navtext {
-    color:white;
+    color: white;
     font-size: 1.5rem;
     text-decoration: none;
     margin-left: 30px;
@@ -366,42 +370,49 @@
     margin-left: 10px;
 } */
 
-.footer{
+.footer {
     background-color: #BBD8DE;
-    color:black;
+    color: black;
     font-size: 17px;
-    }
-    .foot{
+}
+
+.foot {
     display: flex;
     justify-content: space-between;
-    width:90%;
-    
-    }
-    .footer i:hover{
-    background-color:#BBD8DE;
+    width: 90%;
+
+}
+
+.footer i:hover {
+    background-color: #BBD8DE;
     border-radius: 5px;
     color: black;
     transition: 2px;
-    }
-    .footer ul{
+}
+
+.footer ul {
     display: flex;
     gap: 10px;
     margin-top: 50px;
-    }
-    .footer ul .li{
+}
+
+.footer ul .li {
     display: flex;
-    }
-    .footer i{
-        margin-left: 50px;
-        transition: 0.6s;
-    }
-    .footer a{
-        text-decoration: none;
-        color: black;
-    }
-    .fa-facebook:before {
-        content: "";
-    }
+}
+
+.footer i {
+    margin-left: 50px;
+    transition: 0.6s;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-facebook:before {
+    content: "";
+}
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
@@ -421,21 +432,21 @@
     }
 
     #You-are-here {
-         position: absolute;
+        position: absolute;
         color: white;
         font-size: 20px;
         left: 9rem;
         top: 8rem;
-       
-        
+
+
         border-radius: 10px;
-        opacity: 0.5; 
+        opacity: 0.5;
         width: 10rem;
         padding-left: 0%;
         text-align: center;
         margin-top: -30%;
         margin-right: -20%;
-         
+
     }
 
 
@@ -522,7 +533,7 @@
         background-color: #BBD8DE;
         width: 100%;
         margin-left: 0%;
-       
+
     }
 
     .we1 {
@@ -558,23 +569,25 @@
         color: #6DA6A1;
     } */
 
-    .footer ul{
+    .footer ul {
         flex-direction: column;
         margin-top: 10px;
-        }
-        .footer li{
+    }
+
+    .footer li {
         font-size: 7px;
-        }
-        .footer i{
+    }
+
+    .footer i {
         margin-left: 20px;
         font-size: 10px;
         width: 100%;
         margin-top: 10px;
-        }
+    }
 
-        .fa-facebook:before {
-            content: "";
-        }
+    .fa-facebook:before {
+        content: "";
+    }
 
 
 }
@@ -732,6 +745,7 @@
         margin-left: 15px;
 
     }
+
     .fa-facebook:before {
         content: "";
     }
