@@ -36,7 +36,7 @@ document.getElementById("imitateLevel").style.width=imitateCounter/5*100+"%" ;
 
 function logout() {
 
-     location.href = "../Batool/project3.html";
+     location.href = "Batool/project3.html";
  
      sessionStorage.clear();
  
