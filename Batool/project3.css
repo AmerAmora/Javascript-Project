@@ -1,5 +1,7 @@
 /* movement in css (effect) */
-
+.fa-facebook:before {
+    content:none;
+}
 .navbar-collapse {
     flex-grow: 0;
 }

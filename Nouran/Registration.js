@@ -1,4 +1,5 @@
 var i = 0;
+// localStorage.clear();
 function signup() {
     var flag = true;
     localStorage.setItem("i", i);
@@ -13,6 +14,7 @@ function signup() {
             alert("username is already taken");
             flag = false;
             break;
+
 
         }
 
@@ -42,7 +44,7 @@ function signup() {
 
 
         i++;
-        location.href="../Batool/project3.html"
+        location.href = "../Batool/project3.html"
     }
 }
 // localStorage.clear();
