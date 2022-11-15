@@ -21,7 +21,8 @@ else{
 function logout() {
 
     location.href = "../Batool/project3.html";
-
+    localStorage.setItem("result",0);
+    localStorage.setItem("loggeduser","");
     sessionStorage.clear();
 
 }

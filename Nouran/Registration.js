@@ -1,5 +1,4 @@
 var i = 0;
-// localStorage.clear();
 function signup() {
     var flag = true;
     localStorage.setItem("i", i);
@@ -8,8 +7,8 @@ function signup() {
     var firstname = document.getElementById("firstname").value;
 
 
-    var x = 0;
-    for (x = 0; x < 10; x++) {
+  
+    for (var x = 0; x < 10; x++) {
         if (firstname == localStorage.getItem("firstname" + x)) {
             alert("username is already taken");
             flag = false;
@@ -24,6 +23,7 @@ function signup() {
 
     }
     if (flag) {
+        i++;
         //set to local storage
         localStorage.setItem("firstname" + i, firstname);
         // console.log(typeof "result");
@@ -43,7 +43,7 @@ function signup() {
         localStorage.setItem("Confirm-password" + i, Confirmpass);
 
 
-        i++;
+        
         location.href = "../Batool/project3.html"
     }
 }

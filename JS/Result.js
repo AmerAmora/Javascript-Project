@@ -1,11 +1,11 @@
- let result = localStorage.getItem("result");
- var loggeduser = localStorage.getItem("loggeduser");
+var loggeduser = localStorage.getItem("loggeduser");
+
+ let result = localStorage.getItem("result"+loggeduser);
  let imitateCounter=Number(localStorage.getItem("ImitateCounter"+loggeduser));
  let adaptCounter=Number(localStorage.getItem("adaptCounter"+loggeduser));
  let trasnposeCounter=Number(localStorage.getItem("trasnposeCounter"+loggeduser));
 var totalcorrect=imitateCounter+adaptCounter+trasnposeCounter;
 var totalwrong=20-totalcorrect;
-if(imitateCounter==0){imitateCounter=0;}
  
 
 
