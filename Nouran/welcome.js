@@ -8,8 +8,9 @@ document.getElementById("username").innerHTML = y;
 
 function logout() {
 
-    location.href = "../Batool/project3.html";
+    
    
     sessionStorage.clear();
+    location.href = "../Batool/project3.html";
 
 }
