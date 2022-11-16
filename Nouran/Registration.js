@@ -45,7 +45,7 @@ function signup() {
 
 
 
-        location.href = "../Batool/project3.html"
+        location.href = "../Batool/Sign-in.html"
 
 
 
@@ -54,12 +54,12 @@ function signup() {
 
 
 
-        var x = document.getElementById("confirmpassword");
-        // console.log(x);
+        // var x = document.getElementById("confirmpassword");
+        // // console.log(x);
 
-        localStorage.setItem("batool123", x);
+        // localStorage.setItem("batool123", x);
 
-        console.log(localStorage.getItem("batool123"));
+        // console.log(localStorage.getItem("batool123"));
     }
 }
 // localStorage.clear();
