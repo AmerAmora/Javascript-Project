@@ -66,6 +66,7 @@ height: 200px;
     align-items: center;
     justify-content: space-around;
     border-bottom: 4px solid white;
+    gap: -42px;
 
 
 }
